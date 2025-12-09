@@ -9,5 +9,7 @@ int main()
     MyAge = 23;
     cout << MyAge << endl;
 
+    cout << "MyAge is" << MyAge << " Years Old!\n\n";
+
     return 0;
 }
