@@ -25,7 +25,10 @@ int main()
     cout << MyDoubleNumber << endl;
     cout << MyLetter << endl;
     cout << MyText << endl;
-    cout << MyBoolean << endl;
+    cout << MyBoolean << endl << endl;
+
+    char ch1 = 'A', ch2 = 'B', ch3 = 'C';
+    cout << ch1 << ch2 << ch3 << " reversed is " << ch3 << ch2 << ch1 << endl;
 
     return 0;
 }
