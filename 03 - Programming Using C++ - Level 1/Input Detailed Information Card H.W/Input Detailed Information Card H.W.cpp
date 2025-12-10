@@ -11,18 +11,19 @@ int main()
     char Gender;
     bool Married;
 
-    cout << "Please, fill out the following information about you:\n";
+    cout << "Please, fill out the following information about you:\n\n";
     cout << "Name: "; cin >> Name;
-    cout << "\nAge: "; cin >> Age;
-    cout << "\nCountry:"; cin >> Country;
-    cout << "\nCity: "; cin >> City;
-    cout << "\nMonthly Salary: "; cin >> MonthlySalary;
+    cout << "Age: "; cin >> Age;
+    cout << "Country:"; cin >> Country;
+    cout << "City: "; cin >> City;
+    cout << "Monthly Salary: "; cin >> MonthlySalary;
     float YearlySalary = MonthlySalary * 12;
-    cout << "\nGender: "; cin >> Gender;
-    cout << "\nAre you married? "; cin >> Married;
+    cout << "Gender: "; cin >> Gender;
+    cout << "Are you married? "; cin >> Married;
 
     cout << endl;
 
+    cout << "Detailed Information Card\n";
     cout << "**********************\n";
     cout << "Name: " << Name << endl;
     cout << "Age: " << Age << endl;
