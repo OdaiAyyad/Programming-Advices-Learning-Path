@@ -1,20 +1,39 @@
-// Type Modifiers Practicing.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // By default, everything is signed!!
+    int v1;
+    signed int v2; 
+    // The same
+
+    unsigned int v3;
+
+    short int v4;
+    short v5;
+    // The same
+
+    unsigned short int v6;
+    unsigned short v7;
+    //The same
+
+    signed long int v8;
+    long int v9;
+    long v10;
+    // The same;
+
+    unsigned long v11;
+
+    long long int v12;
+
+    unsigned long long v13;
+
+    signed char v15;
+    char v16;
+    // The same
+
+    unsigned char v17;
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
