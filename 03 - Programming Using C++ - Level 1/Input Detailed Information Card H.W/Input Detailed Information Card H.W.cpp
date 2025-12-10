@@ -24,7 +24,7 @@ int main()
     cout << endl;
 
     cout << "Detailed Information Card\n";
-    cout << "**********************\n";
+    cout << "*************************\n";
     cout << "Name: " << Name << endl;
     cout << "Age: " << Age << endl;
     cout << "Country: " << Country << endl;
@@ -33,7 +33,7 @@ int main()
     cout << "Yearly Salary: " << YearlySalary << endl;
     cout << "Gender: " << Gender << endl;
     cout << "Married? " << Married << endl;
-    cout << "**********************\n";
+    cout << "*************************\n";
 
     return 0;
 }
