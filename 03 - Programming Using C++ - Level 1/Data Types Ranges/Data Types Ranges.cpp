@@ -1,20 +1,30 @@
-// Data Types Ranges.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "*****************************************************************\n";
+    cout << "char Range: (" << CHAR_MIN << ", " << CHAR_MAX << ")\n";
+    cout << "unsigned char Range: (" << 0 << ", " << UCHAR_MAX << ")\n\n";
+
+    cout << "short int Range: (" << SHRT_MIN << ", " << SHRT_MAX << ")\n";
+    cout << "unsigned short int Range: (" << 0 << ", " << USHRT_MAX << ")\n\n";
+
+    cout << "int Range: (" << INT_MIN << ", " << INT_MAX << ")\n";
+    cout << "unsigned int Range: (" << 0 << ", " << UINT_MAX << ")\n";
+    cout << "long int Range: (" << LONG_MIN << ", " << LONG_MAX << ")\n";
+    cout << "unsigned long int Range: (" << 0 << ", " << ULONG_MAX << ")\n\n";
+
+    cout << "long long int Range: (" << LLONG_MIN << ", " << LLONG_MAX << ")\n";
+    cout << "unsigned long long int Range: (" << 0 << ", " << ULLONG_MAX << ")\n\n";
+
+    cout << "float Range: (" << FLT_MIN << ", " << FLT_MAX << ")\n";
+    cout << "float(negative) Range: (" << -FLT_MIN << ", " << -FLT_MAX << ")\n\n";
+
+    cout << "double Range: (" << DBL_MIN << ", " << DBL_MAX << ")\n";
+    cout << "double(negative) Range: (" << -DBL_MIN << ", " << -DBL_MAX << ")\n";
+    cout << "char Range: (" << CHAR_MIN << ", " << CHAR_MAX << ")\n";
+    cout << "*****************************************************************\n";
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
