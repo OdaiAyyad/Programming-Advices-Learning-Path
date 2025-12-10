@@ -1,26 +1,27 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Odai Ayyad";
-    std::cout << "This is My Third C++ Program";
+    cout << "Odai Ayyad";
+    cout << "This is My Third C++ Program";
 
-    std::cout << "\nOdai Ayyad\n\n";
-    std::cout << "This is My Third C++ Program\n";
+    cout << "\nOdai Ayyad\n\n";
+    cout << "This is My Third C++ Program\n";
 
-    std::cout << "Odai Ayyad" << std::endl;
-    std::cout << "This is My Third C++ Program" << std::endl;
+    cout << "Odai Ayyad" << std::endl;
+    cout << "This is My Third C++ Program" << std::endl;
 
-    std::cout << "M1" << "M2" << "M3\n";
-    std::cout << "M1 " << "M2 " << "M3\n";
+    cout << "M1" << "M2" << "M3\n";
+    cout << "M1 " << "M2 " << "M3\n";
 
-    std::cout << "M1" << 10+5 << "M3\n";
-    std::cout << "M1 " << "M2 " << "M3\n";
+    cout << "M1" << 10+5 << "M3\n";
+    cout << "M1 " << "M2 " << "M3\n";
 
-    std::cout << "M1 " << 10+5 << " M3\n";
-    std::cout << "M1 " << "M2 " << "M3\n";
+    cout << "M1 " << 10+5 << " M3\n";
+    cout << "M1 " << "M2 " << "M3\n";
 
-    std::cout << "The Result of 10+5= " << 10 + 5 << "\n";
+    cout << "The Result of 10+5= " << 10 + 5 << "\n";
 
     return 0;
 }
