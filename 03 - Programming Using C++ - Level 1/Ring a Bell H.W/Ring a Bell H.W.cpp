@@ -1,8 +1,9 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "\a";
+    cout << "\a";
 
     return 0;
 }
