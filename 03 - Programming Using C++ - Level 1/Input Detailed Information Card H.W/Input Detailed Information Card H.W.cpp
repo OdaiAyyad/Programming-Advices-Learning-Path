@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     string Name;
-    int Age;
+    short Age;
     string Country;
     string City;
     float MonthlySalary;
