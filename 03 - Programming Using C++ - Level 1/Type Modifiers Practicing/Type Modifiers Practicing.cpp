@@ -35,5 +35,15 @@ int main()
 
     unsigned char v17;
 
+    // Examples on the above type modifiers:
+    double distance = 56E12; // 56E12 is equal to 56*10^12
+    cout << distance << endl;
+
+    short d = 34342323; // Error! out of range
+    cout << d << endl;
+
+    unsigned int a = -10; // Error! can only store positive numbers
+    cout << a << endl;
+
     return 0;
 }
