@@ -7,5 +7,7 @@ int main()
 
     cout << "Enter a Number: "; cin >> N;
 
+    cout << N << " ^ 2 = " << N * N << endl;
+
     return 0;
 }
