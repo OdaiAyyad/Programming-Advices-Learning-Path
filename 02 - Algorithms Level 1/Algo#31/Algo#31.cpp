@@ -9,6 +9,7 @@ int main()
 
     cout << N << " ^ 2 = " << N * N << endl;
     cout << N << " ^ 3 = " << N * N * N << endl;
+    cout << N << " ^ 4 = " << N * N * N * N << endl;
 
     return 0;
 }
