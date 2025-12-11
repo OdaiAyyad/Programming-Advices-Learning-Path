@@ -7,5 +7,7 @@ int main()
 
     cout << "Enter circle circumference: "; cin >> L;
 
+    cout << "Area = " << (L * L) << endl;
+
     return 0;
 }
