@@ -10,7 +10,7 @@ int main()
 
     Remainder = CashPaid - TotalBill;
 
-    cout << "Area = " << Remainder << endl;
+    cout << "Remainder = " << Remainder << endl;
 
     return 0;
 }
