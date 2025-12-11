@@ -11,9 +11,9 @@ int main()
     cout << "Enter number of seconds: "; cin >> Seconds;
 
     Minutes = Minutes * 60;
-    Hours = Minutes * 60;
-    Days = Hours * 24;
-    TotalSeconds = Days;
+    Hours = Hours * 60 * 60;
+    Days = Days * 60 * 60 * 24;
+    TotalSeconds = Days + Hours + Minutes + Seconds;
 
     cout << "Your task total time duration in seconds = " << TotalSeconds << endl;
 
