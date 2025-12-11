@@ -13,13 +13,13 @@ int main()
 
     int NumberOfDays = floor(TotalSeconds / SecondsPerDay);
     Remainder = TotalSeconds % SecondsPerDay;
-    int NumberOfHours = floor(Remainder / SecondsPerMinute);
-    Remainder = Remainder % SecondsPerMinute;
+    int NumberOfHours = floor(Remainder / SecondsPerHour);
+    Remainder = Remainder % SecondsPerHour;
     int NumberOfMinutes = floor(Remainder / SecondsPerMinute);
     Remainder = Remainder % SecondsPerMinute;
     int NumberOfSeconds = Remainder;
 
-    cout << SecondsPerDay << ":" << SecondsPerMinute << ":" << SecondsPerMinute << ":" << NumberOfSeconds;
+    cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds;
 
     return 0;
 }
