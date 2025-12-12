@@ -31,14 +31,14 @@ int main()
 {
     StPerson person1;
 
-    person1.FullName = "Kevin Smith";
-    person1.Age = 35;
+    person1.FullName = "Odai Ayyad";
+    person1.Age = 23;
     person1.Gender = 'M';
-    person1.IsMarried = true;
+    person1.IsMarried = 0;
     person1.Salary.MonthlySalary = 7500;
     person1.Salary.YearlySalary = person1.Salary.MonthlySalary * 12;
-    person1.Address.Country = "USA";
-    person1.Address.City = "NYC";
+    person1.Address.Country = "Jordan";
+    person1.Address.City = "Amman";
 
     cout << "**********************\n";
     cout << "Name: " << person1.FullName << endl;
