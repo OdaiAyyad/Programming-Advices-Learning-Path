@@ -13,7 +13,7 @@ struct StAddress
 struct StSalary
 {
     float MonthlySalary;
-    float YearlySalary = MonthlySalary * 12;
+    float YearlySalary;
 };
 
 struct StPerson
@@ -36,7 +36,7 @@ int main()
     person1.Gender = 'M';
     person1.IsMarried = true;
     person1.Salary.MonthlySalary = 7500;
-    person1.Salary.YearlySalary;
+    person1.Salary.YearlySalary = person1.Salary.MonthlySalary * 12;
     person1.Address.Country = "USA";
     person1.Address.City = "NYC";
 
