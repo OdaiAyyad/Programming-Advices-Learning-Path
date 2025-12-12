@@ -46,7 +46,17 @@ int main()
     person1.Address.City = "Amman";
     person1.FavColor = FavColor::Blue;
 
-
+    cout << "**********************\n";
+    cout << "Name: " << person1.FullName << endl;
+    cout << "Age: " << person1.Age << endl;
+    cout << "Married? " << person1.Status << endl;
+    cout << "Gender: " << person1.Gender << endl;
+    cout << "Country: " << person1.Address.Country << endl;
+    cout << "City: " << person1.Address.City << endl;
+    cout << "Monthly Salary: " << person1.Salary.MonthlySalary << endl;
+    cout << "Yearly Salary: " << person1.Salary.YearlySalary << endl;
+    cout << "Favoruit Color: " << person1.FavColor << endl;
+    cout << "**********************\n";
 
     return 0;
 }
