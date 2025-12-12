@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -15,7 +16,7 @@ int main()
     Days = Days * 60 * 60 * 24;
     TotalSeconds = Days + Hours + Minutes + Seconds;
 
-    cout << "Your task total time duration in seconds = " << TotalSeconds << endl;
+    cout << "Your task total time duration in seconds = " << round(TotalSeconds) << endl;
 
     return 0;
 }
