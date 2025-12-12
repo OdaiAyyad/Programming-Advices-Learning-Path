@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -8,7 +9,8 @@ int main()
 
     cout << "Enter the square side length: "; cin >> A;
 
-    cout << "\nArea = " << (PI*A*A)/4 << endl;
+    float Area = PI * pow(A, 2) / 4;
+    cout << "\nArea = " << ceil(Area) << endl;
 
     return 0;
 }
