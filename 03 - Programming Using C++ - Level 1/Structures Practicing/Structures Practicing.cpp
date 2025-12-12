@@ -2,11 +2,19 @@
 #include <cmath>
 using namespace std;
 
+struct StAddress
+{
+    string Country;
+    string City;
+    string Street;
+    string PoBox;
+};
+
 struct StOwner
 {
     string FullName;
     string Phone;
-    string Address;
+    StAddress Address;
 };
 
 struct Car
@@ -30,10 +38,13 @@ int main()
     car2.Brand = "BMW";
     car2.Model = "M5";
     car2.YearOfMade = 2018;
+    car2.Owner.Address.Country = "Jordan";
+    car2.Owner.Address.City = "Amman";
 
     cout << car1.Brand << " " << car1.Model << " " << car1.YearOfMade << endl;
     cout << car1.Owner.FullName << " " << car1.Owner.Phone << endl << endl;
     cout << car2.Brand << " " << car2.Model << " " << car2.YearOfMade << endl;
+    cout << car2.Owner.Address.Country << " " << car2.Owner.Address.City << endl;
 
     return 0;
 }
