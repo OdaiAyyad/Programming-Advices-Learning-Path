@@ -8,7 +8,8 @@ int main()
 
     cout << "Enter the circle diameter: "; cin >> D;
 
-    cout << "\nArea = " << (PI * D * D) / 4 << endl;
+    float Area = PI * pow(D, 2) / 4;
+    cout << "\nArea = " << ceil(Area) << endl;
 
     return 0;
 }
