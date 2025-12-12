@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Logical Operators.cpp">
+    <ClCompile Include="Logical Operators H.W.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
