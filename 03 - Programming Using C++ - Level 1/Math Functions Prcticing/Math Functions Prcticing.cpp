@@ -26,7 +26,9 @@ int main()
     cout << "Ceil(-2.9) = " << ceil(-2.9) << endl;
     cout << "Floor(-2.9) = " << floor(-2.9) << "\n\n";
 
-
+    // Absolute (abs)
+    cout << "Absolute value of (-10) = " << abs(-10) << endl;
+    cout << "Absolute value of (10) = " << abs(10) << "\n\n";
 
     return 0;
 }
