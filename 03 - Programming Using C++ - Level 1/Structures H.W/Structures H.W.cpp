@@ -21,6 +21,7 @@ struct StPerson
     string FullName;
     short Age;
     bool IsMarried;
+    char Gender;
     string Phone;
     StAddress Address;
     StSalary Salary;
@@ -28,7 +29,27 @@ struct StPerson
 
 int main()
 {
+    StPerson person1;
 
+    person1.FullName = "Kevin Smith";
+    person1.Age = 35;
+    person1.Gender = 'M';
+    person1.IsMarried = true;
+    person1.Salary.MonthlySalary = 7500;
+    person1.Salary.YearlySalary;
+    person1.Address.Country = "USA";
+    person1.Address.City = "NYC";
+
+    cout << "**********************\n";
+    cout << "Name: " << person1.FullName << endl;
+    cout << "Age: " << person1.Age << endl;
+    cout << "Married? " << person1.IsMarried << endl;
+    cout << "Gender: " << person1.Gender << endl;
+    cout << "Country: " << person1.Address.Country << endl;
+    cout << "City: " << person1.Address.City << endl;
+    cout << "Monthly Salary: " << person1.Salary.MonthlySalary << endl;
+    cout << "Yearly Salary: " << person1.Salary.YearlySalary << endl;
+    cout << "**********************\n";
 
     return 0;
 }
