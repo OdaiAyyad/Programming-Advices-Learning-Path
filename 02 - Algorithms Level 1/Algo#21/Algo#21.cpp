@@ -10,7 +10,7 @@ int main()
     cout << "Enter circle circumference: "; cin >> L;
 
     float Area = pow(L, 2) / (4 * PI);
-    cout << "Area = " << ceil(Area) << endl;
+    cout << "Area = " << floor(Area) << endl;
 
     return 0;
 }
