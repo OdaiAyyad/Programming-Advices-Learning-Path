@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -8,7 +9,8 @@ int main()
 
     cout << "Enter circle circumference: "; cin >> L;
 
-    cout << "Area = " << (L * L) / (4 * PI) << endl;
+    float Area = pow(L, 2) / (4 * PI);
+    cout << "Area = " << ceil(Area) << endl;
 
     return 0;
 }
