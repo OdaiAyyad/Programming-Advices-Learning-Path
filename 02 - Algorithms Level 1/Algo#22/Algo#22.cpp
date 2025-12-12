@@ -11,7 +11,7 @@ int main()
     cout << "Enter triangle base length: "; cin >> b;
  
     float Area = (PI * pow(b, 2) / 4) * ((2 * a - b) / (2 * a + b));
-    cout << "Area = " << ceil(Area) << endl;
+    cout << "Area = " << floor(Area) << endl;
 
     return 0;
 }
