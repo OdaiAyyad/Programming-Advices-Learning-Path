@@ -15,5 +15,10 @@ int main()
 
     cout << "Round of square root value of 50 = " << round(sqrt(50)) << endl;
 
+    // Power (pow)
+    cout << "2 ^ 4 = " << pow(2, 4) << endl;
+    cout << "4 ^ 3 = " << pow(4, 3) << endl;
+
+
     return 0;
 }
