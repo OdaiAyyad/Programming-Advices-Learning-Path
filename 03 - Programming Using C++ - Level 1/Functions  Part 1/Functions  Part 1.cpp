@@ -11,9 +11,15 @@ void MyFunction()
     cout << "This is my first function, it got executed :-)\n";
 }
 
+void MyFunction2()
+{
+    cout << "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n";
+}
+
 int main()
 {
     MyFunction();
+    MyFunction2();
 
     return 0;
 }
