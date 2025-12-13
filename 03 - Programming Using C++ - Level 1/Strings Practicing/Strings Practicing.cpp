@@ -19,5 +19,15 @@ int main()
     int Sum = stoi(S1) + stoi(S2);
     cout << Sum << endl; // Will print 30
 
+    // Read strings with spaces:
+    string FullName;
+
+    // cin >> FullName;
+    // cout << FullName << endl;
+
+    // getline function will solve this problem:
+    getline(cin, FullName);
+    cout << FullName << endl;
+
     return 0;
 }
