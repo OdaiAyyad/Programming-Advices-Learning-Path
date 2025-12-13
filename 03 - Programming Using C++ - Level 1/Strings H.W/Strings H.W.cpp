@@ -18,6 +18,7 @@ int main()
     getline(cin, S3);
     cout << S3 << "\n\n";
 
+    cout << "*************************************\n";
     cout << "The length of the first string is: " << S1.length() << endl;
     cout << "Characters at 0, 2, 4, 7 are: " << S1[0] << ", " << S1[2] << ", " << S1[4] << ", " << S1[7] << "\n\n";
 
