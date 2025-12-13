@@ -13,13 +13,17 @@ int main()
 
     cout << "Double Number: " << num_d << endl;
     cout << "Float Number: " << num_f << endl;
-    cout << "Integer Number: " << num_i << endl;
+    cout << "Integer Number: " << num_i << endl << endl;
 
     int N1 = 20;
     string str1 = to_string(N1);
 
     cout << "N1 to String: " << str1 << endl;
 
+    double N2 = 33.5;
+    string str2 = to_string(N2);
+
+    cout << "N2 to String: " << str2 << endl;
 
     return 0;
 }
