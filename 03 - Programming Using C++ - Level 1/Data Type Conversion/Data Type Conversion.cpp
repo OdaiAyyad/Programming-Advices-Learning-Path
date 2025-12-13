@@ -14,7 +14,7 @@ int main()
 
     num1 = int(num2); // Explicit Conversion
 
-    cout << num1 << endl << endl;
+    cout << num1 << "\n\n";
 
     // Converting String to int, float, double
     // Include string library first: #include <string>
@@ -32,7 +32,19 @@ int main()
 
     cout << "num_int = " << num_int << endl;
     cout << "num_float = " << num_float << endl;
-    cout << "num_double = " << num_double << endl;
+    cout << "num_double = " << num_double << "\n\n";
+
+    // Converting Numerical Data Types to String
+
+    int num3 = 123;
+    double num4 = 18.99;
+
+    string st1, st2;
+    st1 = to_string(num3);
+    st2 = to_string(num4);
+
+    cout << st1 << endl;
+    cout << st2 << "\n\n";
 
     return 0;
 }
