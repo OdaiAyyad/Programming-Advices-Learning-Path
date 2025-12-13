@@ -33,6 +33,15 @@ void RandomSentences()
     cout << "Odai Ayyad\n";
 }
 
+void H_Letter()
+{
+    cout << "*   *\n";
+    cout << "*   *\n";
+    cout << "*****\n";
+    cout << "*   *\n";
+    cout << "*   *\n";
+}
+
 int main()
 {
     InformationCard();
@@ -40,6 +49,8 @@ int main()
     StarsRows();
     cout << endl;
     RandomSentences();
+    cout << endl;
+    H_Letter();
     cout << endl;
 
     return 0;
