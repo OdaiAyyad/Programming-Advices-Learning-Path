@@ -16,7 +16,8 @@ int main()
 
     cout << S3 << endl; // Will print 1020
 
-
+    int Sum = stoi(S1) + stoi(S2);
+    cout << Sum << endl; // Will print 30
 
     return 0;
 }
