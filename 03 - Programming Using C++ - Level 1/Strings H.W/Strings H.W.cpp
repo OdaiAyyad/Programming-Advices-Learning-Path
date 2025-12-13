@@ -7,14 +7,17 @@ int main()
 {
     string S1, S2, S3;
     cout << "Enter the first string: ";
+    cin.ignore(1, '\n');
     getline(cin, S1);
     cout << S1 << "\n";
 
     cout << "Enter the second string: ";
+    cin.ignore(1, '\n');
     getline(cin, S2);
     cout << S2 << "\n";
 
     cout << "Enter the third string: ";
+    cin.ignore(1, '\n');
     getline(cin, S3);
     cout << S3 << "\n\n";
 
