@@ -50,5 +50,9 @@ int main()
     person1.FavColor = enColor::Blue;
     person1.MartialStatus = enMartialStatus::Single;
 
+    cout << person1.FirstName << endl;
+    cout << person1.MartialStatus << endl;
+    cout << person1.FavColor << endl;
+
     return 0;
 }
