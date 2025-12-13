@@ -29,5 +29,9 @@ int main()
     getline(cin, FullName);
     cout << FullName << endl;
 
+    // To avoid considering the Enter button as an input, we should use this:
+    cin.ignore(1, '\n');
+    getline(cin, FullName);
+
     return 0;
 }
