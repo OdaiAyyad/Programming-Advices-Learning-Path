@@ -25,5 +25,12 @@ int main()
 
     cout << "N2 to String: " << str2 << endl;
 
+    float N3 = 55.23;
+    string str3 = to_string(N3);
+    int int3 = int(N3);
+
+    cout << "N3 to String: " << str3 << endl;
+    cout << "N3 to Integer: " << int3 << endl;
+
     return 0;
 }
