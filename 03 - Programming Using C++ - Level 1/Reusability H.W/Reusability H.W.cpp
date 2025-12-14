@@ -3,26 +3,39 @@
 #include <cmath>
 using namespace std;
 
-// Professionally, every single function or procedure must do one task, just!
-
 struct stInfo
 {
-    string FirstName;
-    string LastName;
+    string FullName;
     short Age;
-    string Phone;
+    bool IsMArried;
+    char Gender;
+    string Country;
+    string City;
+    float MonthlySalary;
 };
 
 void ReadInfo(stInfo& Info)
 {
-    cout << "Enter your first name: ";
-    getline(cin, Info.FirstName);
-    cout << "Enter your last name: ";
-    getline(cin, Info.LastName);
+    cout << "Enter your full name: ";
+    getline(cin, Info.FullName);
+
     cout << "Enter your age: ";
     cin >> Info.Age;
-    cout << "Enter your phone number: ";
-    cin >> Info.Phone;
+
+    cout << "Enter your country: ";
+    cin >> Info.Country;
+
+    cout << "Enter your city: ";
+    cin >> Info.City;
+
+    cout << "Enter your monthly salary: ";
+    cin >> Info.MonthlySalary;
+
+    cout << "What is your gender? ";
+    cin >> Info.Gender;
+
+    cout << "Are you married? ";
+    cin >> Info.IsMArried;
 }
 
 void PrintInfo(stInfo Info)
