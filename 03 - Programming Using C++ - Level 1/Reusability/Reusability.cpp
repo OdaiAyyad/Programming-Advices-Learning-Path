@@ -40,6 +40,10 @@ int main()
     stInfo Person1Info;
     ReadInfo(Person1Info);
     PrintInfo(Person1Info);
+    cin.ignore(1, '\n');
+    stInfo Person2Info;
+    ReadInfo(Person2Info);
+    PrintInfo(Person2Info);
 
     return 0;
 }
