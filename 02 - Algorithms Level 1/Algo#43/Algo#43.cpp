@@ -1,15 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void TotalSecondsFun(int TotalSeconds)
 {
-    int TotalSeconds, Remainder;
-
-    cout << "Enter your task total time duration in seconds: "; cin >> TotalSeconds;
-
     int SecondsPerMinute = 60;
     int SecondsPerHour = 60 * 60;
     int SecondsPerDay = 60 * 60 * 24;
+    int Remainder;
 
     int NumberOfDays = floor(TotalSeconds / SecondsPerDay);
     Remainder = TotalSeconds % SecondsPerDay;
@@ -20,6 +17,15 @@ int main()
     int NumberOfSeconds = Remainder;
 
     cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds;
+}
+
+int main()
+{
+    int TotalSeconds, Remainder;
+
+    cout << "Enter your task total time duration in seconds: "; cin >> TotalSeconds;
+
+    TotalSecondsFun(TotalSeconds);
 
     return 0;
 }
