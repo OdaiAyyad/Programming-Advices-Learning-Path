@@ -2,15 +2,22 @@
 #include <cmath>
 using namespace std;
 
+float Area(float L)
+{
+    const float PI = 3.14;
+
+    float Area = pow(L, 2) / (4 * PI);
+
+    return Area;
+}
+
 int main()
 {
     int L;
-    const float PI = 3.14;
 
     cout << "Enter circle circumference: "; cin >> L;
 
-    float Area = pow(L, 2) / (4 * PI);
-    cout << "Area = " << floor(Area) << endl;
+    cout << "Area = " << floor(Area(L)) << endl;
 
     return 0;
 }
