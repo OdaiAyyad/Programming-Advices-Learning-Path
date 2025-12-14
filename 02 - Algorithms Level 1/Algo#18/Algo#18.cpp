@@ -2,15 +2,21 @@
 #include <cmath>
 using namespace std;
 
-int main()
+float Area(float R)
 {
     const float PI = 3.14;
+    float Area = PI * pow(R, 2);
+
+    return Area;
+}
+
+int main()
+{
     float R;
 
     cout << "Enter cicle radius: "; cin >> R;
 
-    float Area = PI * pow(R, 2);
-    cout << "Area = " << ceil(Area) << endl;
+    cout << "Area = " << ceil(Area(R)) << endl;
 
     return 0;
 }
