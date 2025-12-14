@@ -3,6 +3,8 @@
 #include <cmath>
 using namespace std;
 
+// Professionally, every single function or procedure must do one task, just!
+
 struct stInfo
 {
     string FirstName;
@@ -25,7 +27,12 @@ void ReadInfo(stInfo& Info)
 
 void PrintInfo(stInfo Info)
 {
-
+    cout << "***********************************\n";
+    cout << "FirstName: " << Info.FirstName << endl;
+    cout << "LastName: " << Info.LastName << endl;
+    cout << "Age: " << Info.Age << endl;
+    cout << "PhoneNumber: " << Info.Phone << endl;
+    cout << "***********************************\n";
 }
 
 int main()
