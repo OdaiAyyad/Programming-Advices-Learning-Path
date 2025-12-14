@@ -2,15 +2,22 @@
 #include <cmath>
 using namespace std;
 
-int main()
+float Area(float A)
 {
     const float PI = 3.14;
+
+    float Area = PI * pow(A, 2) / 4;
+
+    return Area;
+}
+
+int main()
+{
     unsigned int A;
 
     cout << "Enter the square side length: "; cin >> A;
 
-    float Area = PI * pow(A, 2) / 4;
-    cout << "\nArea = " << ceil(Area) << endl;
+    cout << "\nArea = " << ceil(Area(A)) << endl;
 
     return 0;
 }
