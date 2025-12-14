@@ -7,7 +7,7 @@ struct stInfo
 {
     string FullName;
     short Age;
-    bool IsMArried;
+    bool IsMarried;
     char Gender;
     string Country;
     string City;
@@ -35,16 +35,20 @@ void ReadInfo(stInfo& Info)
     cin >> Info.Gender;
 
     cout << "Are you married? ";
-    cin >> Info.IsMArried;
+    cin >> Info.IsMarried;
 }
 
 void PrintInfo(stInfo Info)
 {
     cout << "\n**************************\n";
-    cout << "First Name: " << Info.FirstName << endl;
-    cout << "Last Name: " << Info.LastName << endl;
+    cout << "Full Name: " << Info.FullName << endl;
     cout << "Age: " << Info.Age << endl;
-    cout << "Phone Number: " << Info.Phone << endl;
+    cout << "Gender: " << Info.Gender << endl;
+    cout << "Married? " << Info.IsMarried << endl;
+    cout << "Country: " << Info.Country << endl;
+    cout << "City: " << Info.City << endl;
+    cout << "Monthly Salary: " << Info.MonthlySalary << endl;
+    cout << "Yearly Salary: " << (Info.MonthlySalary * 12) << endl;
     cout << "**************************\n";
 }
 
@@ -53,10 +57,6 @@ int main()
     stInfo Person1Info;
     ReadInfo(Person1Info);
     PrintInfo(Person1Info);
-    cin.ignore(1, '\n');
-    stInfo Person2Info;
-    ReadInfo(Person2Info);
-    PrintInfo(Person2Info);
 
     return 0;
 }
