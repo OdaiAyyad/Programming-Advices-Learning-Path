@@ -28,10 +28,10 @@ void ReadInfo(stInfo& Info)
 void PrintInfo(stInfo Info)
 {
     cout << "\n**************************\n";
-    cout << "FirstName: " << Info.FirstName << endl;
-    cout << "LastName: " << Info.LastName << endl;
+    cout << "First Name: " << Info.FirstName << endl;
+    cout << "Last Name: " << Info.LastName << endl;
     cout << "Age: " << Info.Age << endl;
-    cout << "PhoneNumber: " << Info.Phone << endl;
+    cout << "Phone Number: " << Info.Phone << endl;
     cout << "**************************\n";
 }
 
