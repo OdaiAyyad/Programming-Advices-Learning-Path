@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+float Area(float A, float D)
+{
+    float Area = A * (sqrt(pow(D, 2) - pow(A, 2)));
+
+    return Area;
+}
+
 int main()
 {
     const float PI = 3.14;
