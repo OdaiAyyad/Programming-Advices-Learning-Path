@@ -2,15 +2,19 @@
 #include <cmath>
 using namespace std;
 
+int Power(int N, int M)
+{
+    return pow(N, M);
+}
+
 int main()
 {
-    int N;
+    int N, M;
 
     cout << "Enter a Number: "; cin >> N;
+    cout << "Enter the Power: "; cin >> M;
 
-    cout << N << " ^ 2 = " << round(pow(N, 2)) << endl;
-    cout << N << " ^ 3 = " << round(pow(N, 3)) << endl;
-    cout << N << " ^ 4 = " << round(pow(N, 4)) << endl;
+    cout << N << " ^ " << M << " = " << round(Power(N, M)) << endl;
 
     return 0;
 }
