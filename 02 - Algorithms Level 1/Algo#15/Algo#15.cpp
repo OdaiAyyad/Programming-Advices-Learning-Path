@@ -1,14 +1,21 @@
 #include <iostream>
 using namespace std;
 
+float Area(float A, float B)
+{
+    float Area = A * B;
+
+    return Area;
+}
+
 int main()
 {
-    unsigned int a, b;
+    float A, B;
 
-    cout << "Enter first line length: "; cin >> a;
-    cout << "Enter second line length: "; cin >> b;
+    cout << "Enter first line length: "; cin >> A;
+    cout << "Enter second line length: "; cin >> B;
 
-    cout << "\nArea = " << a * b << endl;
+    cout << "\nArea = " << Area(A, B) << endl;
 
     return 0;
 }
