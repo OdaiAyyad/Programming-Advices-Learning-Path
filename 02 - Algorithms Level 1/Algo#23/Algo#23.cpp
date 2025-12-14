@@ -7,8 +7,8 @@ float Area(float a, float b, float c)
 {
     const float PI = 3.14;
     float P = (a + b + c) / 2;
-
-    float Area = PI * ((a * b * c) / 4 * sqrt(P * (P - a) * (P - b) * (P - c)));
+    float T = (a * b * c) / (4 * sqrt(P * (P - a) * (P - b) * (P - c)));
+    float Area = PI * (T * T);
 
     return Area;
 }
