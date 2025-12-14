@@ -30,10 +30,10 @@ int main()
     num1 = 1000;
 
     ByValueFun(num1);
-    cout << "Number after calling ByValue function became: " << num1 << endl;
+    cout << "Number after calling ByValue function became: " << num1 << "\n\n";
 
     ByReferenceFun(num1);
-    cout << "Number after calling ByReference function became: " << num1 << endl;
+    cout << "Number after calling ByReference function became: " << num1 << "\n\n";
 
     return 0;
 }
