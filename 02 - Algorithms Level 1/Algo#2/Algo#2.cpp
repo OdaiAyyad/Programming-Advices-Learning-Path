@@ -12,7 +12,8 @@ int main()
 {
     string Name;
 
-    cout << "Enter your name: "; cin >> Name;
+    cout << "Enter your name: "; 
+    getline(cin, Name);
 
     PrintName(Name);
 
