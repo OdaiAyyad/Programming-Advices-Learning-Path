@@ -11,7 +11,10 @@ int main()
     cout << "Enter the second grade: "; cin >> Grades[1];
     cout << "Enter the third grade: "; cin >> Grades[2];
 
+    float Average = (Grades[0] + Grades[1] + Grades[2]) / 3;
+
     cout << "\n******************************\n";
+    cout << "The average of grades = " << Average << endl;
 
 
     return 0;
