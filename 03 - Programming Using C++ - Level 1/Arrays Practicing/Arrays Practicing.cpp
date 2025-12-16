@@ -8,6 +8,7 @@ int main()
     int x[5] = { 22, 18, 2, 55, 520 };
 
     cout << x[0] << endl;
+    cout << x[1] << endl;
 
 
     return 0;
