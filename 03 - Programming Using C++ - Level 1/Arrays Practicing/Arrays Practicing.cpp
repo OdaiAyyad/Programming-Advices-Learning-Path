@@ -9,6 +9,7 @@ int main()
 
     cout << x[0] << endl;
     cout << x[1] << endl;
+    cout << x[2] << endl;
 
 
     return 0;
