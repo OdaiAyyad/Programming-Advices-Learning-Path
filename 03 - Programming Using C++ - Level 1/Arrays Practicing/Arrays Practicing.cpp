@@ -11,7 +11,7 @@ int main()
     cout << x[1] << endl;
     cout << x[2] << endl;
     cout << x[3] << endl;
-
+    cout << x[4] << endl;
 
     return 0;
 }
