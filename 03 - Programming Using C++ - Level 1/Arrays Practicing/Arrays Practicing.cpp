@@ -11,7 +11,9 @@ int main()
     cout << x[1] << endl;
     cout << x[2] << endl;
     cout << x[3] << endl;
-    cout << x[4] << endl;
+    cout << x[4] << endl << endl;
+
+    cout << x[0] + x[1] << endl;
 
     return 0;
 }
