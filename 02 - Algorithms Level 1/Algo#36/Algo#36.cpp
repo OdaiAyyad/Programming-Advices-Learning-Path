@@ -12,21 +12,22 @@ void ReadInfo(float &Num1, float &Num2, char &Operation)
 
 float Calculator(float Num1, float Num2, char Operation)
 {
-    if (Operation == '+')
+    switch (Operation)
     {
+    case '+':
         return Num1 + Num2;
-    }
-    else if (Operation == '-')
-    {
+        break;
+    case '-':
         return Num1 - Num2;
-    }
-    else if (Operation == '*')
-    {
+        break;
+    case '*':
         return Num1 * Num2;
-    }
-    else if (Operation == '/')
-    {
+        break;
+    case '/':
         return Num1 / Num2;
+        break;
+    default:
+        cout << "Invalid Operation!";
     }
 }
 
