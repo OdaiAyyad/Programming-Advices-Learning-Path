@@ -12,7 +12,7 @@ int main()
     {
         cout << "The code of IF body has executed.\n";
     }
-    cout << "The code after IF body always executed.\n\n\n";
+    cout << "The code after IF body always executed.\n\n";
 
     // IF-Else Statement
     int z;
