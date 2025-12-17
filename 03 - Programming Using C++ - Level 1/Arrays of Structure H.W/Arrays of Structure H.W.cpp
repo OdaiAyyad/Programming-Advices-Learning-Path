@@ -21,19 +21,32 @@ void ReadPersonInfo(stInfo& Info)
 
 void PrintPersonInfo(stInfo Info)
 {
-    cout << "******************************\n";
+    cout << "*************************\n";
     cout << "First Name: " << Info.FirstName << endl;
     cout << "Last Name:" << Info.LastName << endl;
     cout << "Age: " << Info.Age << endl;
-    cout << "Phone Number: " << Info.Phone << "\n\n";
+    cout << "Phone Number: " << Info.Phone << endl;
+    cout << "*************************\n\n";
+}
+
+void ReadAllInfo(stInfo People[2])
+{
+    ReadPersonInfo(People[0]);
+    ReadPersonInfo(People[1]);
+}
+
+void PrintAllInfo(stInfo People[2])
+{
+    PrintPersonInfo(People[0]);
+    PrintPersonInfo(People[1]);
 }
 
 int main()
 {
-    stInfo Person1;
+    stInfo People[2];
 
-    ReadPersonInfo(Person1);
-    PrintPersonInfo(Person1);
+    ReadAllInfo(People);
+    PrintAllInfo(People);
 
     return 0;
 }
