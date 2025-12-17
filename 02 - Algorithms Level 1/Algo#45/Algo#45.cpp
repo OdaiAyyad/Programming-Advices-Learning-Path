@@ -10,42 +10,36 @@ void ReadMonth(short& Month)
 
 string MonthText(short Month)
 {
-    if (Month == 1)
+    switch (Month)
     {
+    case 1:
         return "January";
-    }
-    else if (Month == 2)
-    {
+        break;
+    case 2:
         return "February";
-    }
-    else if (Month == 3)
-    {
+        break;
+    case 3:
         return "March";
-    }
-    else if (Month == 4)
-    {
+        break;
+    case 4:
         return "April";
-    }
-    else if (Month == 5)
-    {
+        break;
+    case 5:
         return "May";
-    }
-    else if (Month == 6)
-    {
+        break;
+    case 6:
         return "June";
-    }
-    else if (Month == 7)
-    {
+        break;
+    case 7:
         return "July";
-    }
-    else if (Month == 8)
-    {
+        break;
+    case 8:
         return "August";
-    }
-    else if (Month == 9)
-    {
+        break;
+    case 9:
         return "September";
     }
+   
     else if (Month == 10)
     {
         return "October";
