@@ -10,34 +10,32 @@ void ReadDay(short& Day)
 
 string DayText(short Day)
 {
-    if (Day == 1)
+    switch (Day)
     {
+    case 1:
         return "Sunday";
-    }
-    else if (Day == 2)
-    {
+        break;
+    case 2:
         return "Monday";
-    }
-    else if (Day == 3)
-    {
+        break;
+    case 3:
         return "Tuesday";
-    }
-    else if (Day == 4)
-    {
+        break;
+    case 4:
         return "Wednesday";
-    }
-    else if (Day == 5)
-    {
+        break;
+    case 5:
         return "Thursday";
-    }
-    else if (Day == 6)
-    {
+        break;
+    case 6:
         return "Friday";
-    }
-    else if (Day == 7)
-    {
+        break;
+    case 7:
         return "Satarday";
-    }
+        break;
+    default:
+        return "Not a Day!";
+    }   
 }
 
 int main()
