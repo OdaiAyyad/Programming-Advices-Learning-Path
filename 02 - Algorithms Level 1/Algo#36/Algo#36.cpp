@@ -37,7 +37,7 @@ int main()
 
     ReadInfo(Num1, Num2, Operation);
 
-    cout << Calculator(Num1, Num2, Operation) << endl;
+    cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl;
 
     return 0;
 }
