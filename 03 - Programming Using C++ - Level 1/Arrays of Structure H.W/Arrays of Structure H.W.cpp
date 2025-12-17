@@ -47,6 +47,6 @@ int main()
 
     ReadAllInfo(People);
     PrintAllInfo(People);
-
+   
     return 0;
 }
