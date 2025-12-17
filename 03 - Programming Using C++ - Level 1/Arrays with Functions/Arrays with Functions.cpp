@@ -27,7 +27,7 @@ int main()
     int x[3];
 
     ReadArrayData(x);
-
+    PrintArrayData(x);
 
     return 0;
 }
