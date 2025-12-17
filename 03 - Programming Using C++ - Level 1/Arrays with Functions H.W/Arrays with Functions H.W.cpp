@@ -24,5 +24,7 @@ int main()
 
     ReadGrades(Grades);
 
+    cout << "Grades Average = " << AverageCalculation(Grades) << endl;
+
     return 0;
 }
