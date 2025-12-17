@@ -38,7 +38,7 @@ int main()
     float TotalSales;
 
     ReadTotalSales(TotalSales);
-    Commission(TotalSales);
+    cout << "Your Commission: " << Commission(TotalSales) << endl;
 
     return 0;
 }
