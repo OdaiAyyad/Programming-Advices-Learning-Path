@@ -38,19 +38,18 @@ string MonthText(short Month)
         break;
     case 9:
         return "September";
-    }
-   
-    else if (Month == 10)
-    {
+        break;
+    case 10:
         return "October";
-    }
-    else if (Month == 11)
-    {
+        break;
+    case 11:
         return "November";
-    }
-    else if (Month == 12)
-    {
+        break;
+    case 12:
         return "December";
+        break;
+    default:
+        return "Not a Month!";
     }
 }
 
