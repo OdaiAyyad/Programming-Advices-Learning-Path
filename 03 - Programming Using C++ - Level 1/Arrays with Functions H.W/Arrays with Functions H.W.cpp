@@ -12,8 +12,7 @@ void ReadGrades(float Grades[3])
 
 float AverageCalculation(float Grades[3])
 {
-    float AVG;
-    AVG = (Grades[0] + Grades[1] + Grades[2]) / 3;
+    float AVG = (Grades[0] + Grades[1] + Grades[2]) / 3;
 
     return AVG;
 }
