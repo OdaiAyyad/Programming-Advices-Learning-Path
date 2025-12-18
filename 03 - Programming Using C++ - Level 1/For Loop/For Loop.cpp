@@ -21,8 +21,16 @@ int main()
 
     cout << endl;
 
-    // Step 2
+    // Step 2 (Odd Numbers)
     for (int i = 1; i <= 10; i+=2)
+    {
+        cout << i << endl;
+    }
+
+    cout << endl;
+
+    // Step 2 (Even Numbers)
+    for (int i = 0; i <= 10; i += 2)
     {
         cout << i << endl;
     }
