@@ -3,6 +3,8 @@
 #include <cmath>
 using namespace std;
 
+// We always use (for loops) when we know the ranges of the task (from what to what)
+
 int main()
 {
     // 1 - 10
