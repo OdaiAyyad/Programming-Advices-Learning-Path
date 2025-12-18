@@ -11,12 +11,12 @@ int main()
 
         for (int i = 1; i <= Num; i++)
         {
-            if (Num % 2 != 0)
+            if (i % 2 != 0)
             {
-                Sum += Num;
+                Sum += i;
             }
         }
         cout << Sum;
-
+        
     return 0;
 }
