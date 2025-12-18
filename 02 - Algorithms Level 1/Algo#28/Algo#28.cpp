@@ -9,14 +9,14 @@ int main()
 
     cout << "Enter a number: "; cin >> Num;
 
-    if (Num % 2 == 0)
-    {
-        for (int i = 2; i <= Num; i++)
+        for (int i = 1; i <= Num; i++)
         {
-            Sum += Num;
+            if (Num % 2 != 0)
+            {
+                Sum += Num;
+            }
         }
-    }
-    cout << Sum;
+        cout << Sum;
 
     return 0;
 }
