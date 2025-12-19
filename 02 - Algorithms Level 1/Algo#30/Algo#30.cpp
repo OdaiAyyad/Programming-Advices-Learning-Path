@@ -3,17 +3,24 @@
 #include <cmath>
 using namespace std;
 
-int main()
+int Factorial(short Num)
 {
-    short Num, Fact = 1;
-
-    cout << "Enter a positive number: "; cin >> Num;
+    short Fact = 1;
 
     for (int i = Num; i >= 1; i--)
     {
         Fact *= i;
     }
-    cout << "\nFactorial of " << Num << " = " << Fact << endl;
+    return Fact;
+}
+
+int main()
+{
+    short Num;
+
+    cout << "Enter a positive number: "; cin >> Num;
+
+    cout << "\nFactorial of " << Num << " = " << Factorial(Num) << endl;
 
     return 0;
 }
