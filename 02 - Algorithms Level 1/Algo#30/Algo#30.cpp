@@ -13,7 +13,7 @@ int main()
     {
         Fact *= i;
     }
-    cout << "\nFactorial " << Num << " = " << Fact;
+    cout << "\nFactorial " << Num << " = " << Fact << endl;
 
     return 0;
 }
