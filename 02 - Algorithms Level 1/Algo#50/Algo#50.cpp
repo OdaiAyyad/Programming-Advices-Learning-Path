@@ -3,21 +3,32 @@
 #include <cmath>
 using namespace std;
 
+void ReadPIN(string& PIN)
+{
+    cout << "Enter your PIN: "; cin >> PIN;
+}
+
 int main()
 {
-    string PIN;  int Balance = 7500; int Counter = 0;
+    string PIN;
+    short Balance = 7500;
+    short Counter = 0;
 
-    cout << "Enter your PIN: "; cin >> PIN;
+    ReadPIN(PIN);
 
-    while (PIN != "1234")
+    if (PIN == "1234")
     {
-        cout << "\nWrong PIN!\n";
-        cout << "Enter your PIN: "; cin >> PIN;
-        Counter++;
-        if (Counter == 3)
+        cout << "Your balance is: " << Balance << endl;
+    }
+    else
+    {
+        while (Counter != 3)
         {
-            cout << "Card is locked!\n";
+            Counter++;
+            cout << "Wrong PIN.\n";
+            ReadPIN(PIN);
         }
+        cout << "Card is locked!\n";
     }
 
     return 0;
