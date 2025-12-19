@@ -7,11 +7,12 @@ int main()
 {
     for (int i = 1; i <= 12; i++)
     {
+        cout << "i = " << i << ": \n";
         for (int j = 1; j <= 12; j++)
         {
             cout << i << " * " << j << " = " << i * j << endl;
         }
-        cout << "**************************\n";
+        cout << "**************\n";
     }
 
     return 0;
