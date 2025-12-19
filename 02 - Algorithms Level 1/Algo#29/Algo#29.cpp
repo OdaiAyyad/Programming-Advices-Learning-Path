@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-int EvenNumbersSummation(short Num)
+int EvenNumbersSummationForLoop(short Num)
 {
     short Sum = 0;
 
@@ -17,13 +17,31 @@ int EvenNumbersSummation(short Num)
     return Sum;
 }
 
+int EvenNumbersSummationWhileLoop(short Num)
+{
+    short Sum = 0;
+    int i = 1;
+
+    while (i <= Num)
+    {
+        if (i % 2 == 0)
+        {
+            Sum += i;
+        }
+        i++;
+    }
+    return Sum;
+}
+
 int main()
 {
-    short Num, Sum = 0;
+    short Num1, Num2;
 
-    cout << "Enter a number: "; cin >> Num;
+    cout << "Enter a number: "; cin >> Num1;
+    cout << EvenNumbersSummationForLoop(Num1) << endl << endl;
 
-    cout << EvenNumbersSummation(Num) << endl;
+    cout << "Enter a number: "; cin >> Num2;
+    cout << EvenNumbersSummationWhileLoop(Num2) << endl;
 
     return 0;
 }
