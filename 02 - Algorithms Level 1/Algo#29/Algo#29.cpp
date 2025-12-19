@@ -23,7 +23,7 @@ int main()
 
     cout << "Enter a number: "; cin >> Num;
 
-    cout << EvenNumbersSummation(Num);
+    cout << EvenNumbersSummation(Num) << endl;
 
     return 0;
 }
