@@ -10,6 +10,7 @@ int main()
     for (int i = 1; i <= 5; i++)
     {
         cout << "Enter a number: "; cin >> Num;
+
         if (Num >= 50)
         {
             continue;
