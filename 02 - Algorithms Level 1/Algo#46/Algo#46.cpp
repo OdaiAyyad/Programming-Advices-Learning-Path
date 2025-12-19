@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void PrintNumbers()
+void PrintNumbersForLoop()
 {
     for (int i = 65; i <= 90; i++)
     {
@@ -11,9 +11,21 @@ void PrintNumbers()
     }
 }
 
+void PrintNumbersWhileLoop()
+{
+    int i = 65;
+    while (i <= 90)
+    {
+        cout << char(i) << endl;
+        i++;
+    }
+}
+
 int main()
 {
-    PrintNumbers();
+    PrintNumbersForLoop();
+
+    PrintNumbersWhileLoop();
 
     return 0;
 }
