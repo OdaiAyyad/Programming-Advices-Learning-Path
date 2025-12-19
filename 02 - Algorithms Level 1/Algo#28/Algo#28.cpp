@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-int OddNumbersSummation(short Num)
+int OddNumbersSummationForLoop(short Num)
 {
     short Sum = 0;
 
@@ -17,13 +17,32 @@ int OddNumbersSummation(short Num)
     return Sum;
 }
 
+int OddNumbersSummationWhileLoop(short Num)
+{
+    short Sum = 0;
+    int i = 1;
+    while (i <= Num)
+    {
+        if (i % 2 != 0)
+        {
+            Sum += i;
+        }
+        i++;
+    }
+    return Sum;
+}
+
 int main()
 {
-    short Num;
+    short Num1, Num2;
 
-    cout << "Enter a number: "; cin >> Num;
-
-    cout << OddNumbersSummation(Num) << endl;
+    cout << "Enter a number: "; cin >> Num1;
+    cout << OddNumbersSummationForLoop(Num1) << endl;
         
+    cout << "\n\n";
+
+    cout << "Enter a number: "; cin >> Num2;
+    cout << OddNumbersSummationWhileLoop(Num2) << endl;
+
     return 0;
 }
