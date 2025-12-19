@@ -14,7 +14,7 @@ int main()
         cout << "Enter a number: "; cin >> Num;
         Sum += Num;
     }
-    cout << "Summation = " << Sum << endl;
+    cout << "\nSummation = " << Sum << endl;
 
     return 0;
 }
