@@ -17,6 +17,7 @@ void PrintNumbersWhileLoop(short Num)
     while (i >= 1)
     {
         cout << i << endl;
+        i--;
     }
 }
 
