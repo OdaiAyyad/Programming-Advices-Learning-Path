@@ -3,11 +3,9 @@
 #include <cmath>
 using namespace std;
 
-int main()
+int EvenNumbersSummation(short Num)
 {
-    short Num, Sum = 0;
-
-    cout << "Enter a number: "; cin >> Num;
+    short Sum = 0;
 
     for (int i = 1; i <= Num; i++)
     {
@@ -16,7 +14,16 @@ int main()
             Sum += i;
         }
     }
-    cout << Sum;
+    return Sum;
+}
+
+int main()
+{
+    short Num, Sum = 0;
+
+    cout << "Enter a number: "; cin >> Num;
+
+    cout << EvenNumbersSummation(Num);
 
     return 0;
 }
