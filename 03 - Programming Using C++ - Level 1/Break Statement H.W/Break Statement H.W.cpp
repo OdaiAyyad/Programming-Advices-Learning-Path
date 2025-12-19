@@ -6,12 +6,15 @@ using namespace std;
 int main()
 {
     int arr[10] = { 10,20,44,55,33,22,99,88,99,100 };
+    int SearchNum = 20;
 
-    for (int i = 0; i <= 9; i++)
+    for (int i = 0; i <= 10; i++)
     {
-        if (arr[i] == 20)
+        cout << "We are at iteration " << i << endl;
+
+        if (arr[i] == SearchNum)
         {
-            cout << i << endl;
+            cout << "\n" << SearchNum << " found at position " << i << endl;
             break;
         }
     }
