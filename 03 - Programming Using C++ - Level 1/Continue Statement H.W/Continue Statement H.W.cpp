@@ -16,7 +16,7 @@ int main()
         }
         Sum += Num;
     }
-    cout << "Total = " << Sum << endl;
+    cout << "\nTotal = " << Sum << endl;
 
     return 0;
 }
