@@ -24,8 +24,7 @@ int main()
 
     while (Number < 0)
     {
-        cout << "Wrong number, please enter a positive number!";
-        cin >> Number;
+        cout << "Wrong number, please enter a positive number: "; cin >> Number;
     }
     cout << "\nThe number you entered is: " << Number << endl;
 
