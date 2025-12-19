@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void PrintNumbers(short Num)
+void PrintNumbersForLoop(short Num)
 {
     for (int i = Num; i >= 1; i--)
     {
@@ -11,13 +11,26 @@ void PrintNumbers(short Num)
     }
 }
 
+void PrintNumbersWhileLoop(short Num)
+{
+    int i = Num;
+    while (i >= 1)
+    {
+        cout << i << endl;
+    }
+}
+
 int main()
 {
-    short Num;
+    short Num1, Num2;
 
-    cout << "Enter a number: "; cin >> Num;
+    cout << "Enter a number: "; cin >> Num1;
+    PrintNumbersForLoop(Num1);
 
-    PrintNumbers(Num);
+    cout << "\n\n";
+
+    cout << "Enter a number: "; cin >> Num2;
+    PrintNumbersWhileLoop(Num2);
 
     return 0;
 }
