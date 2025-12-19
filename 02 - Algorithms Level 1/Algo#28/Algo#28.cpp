@@ -3,20 +3,27 @@
 #include <cmath>
 using namespace std;
 
+int OddNumbersSummation(short Num)
+{
+    short Sum = 0;
+
+    for (int i = 1; i <= Num; i++)
+    {
+        if (i % 2 != 0)
+        {
+            Sum += i;
+        }
+    }
+    return Sum;
+}
+
 int main()
 {
-    short Num, Sum = 0;
+    short Num;
 
     cout << "Enter a number: "; cin >> Num;
 
-        for (int i = 1; i <= Num; i++)
-        {
-            if (i % 2 != 0)
-            {
-                Sum += i;
-            }
-        }
-        cout << Sum;
+    cout << OddNumbersSummation(Num) << endl;
         
     return 0;
 }
