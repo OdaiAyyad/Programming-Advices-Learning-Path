@@ -45,7 +45,7 @@ int main()
     cout << "\n\n";
 
     // Read number between
-    cout << "The Number is: " << ReadNumberInRange(18, 45);
+    cout << "The Number is: " << ReadNumberInRange(18, 45) << endl;
 
     return 0;
 }
