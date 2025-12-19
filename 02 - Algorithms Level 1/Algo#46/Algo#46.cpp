@@ -24,7 +24,7 @@ void PrintNumbersWhileLoop()
 int main()
 {
     PrintNumbersForLoop();
-
+    cout << "\n-----\n\n";
     PrintNumbersWhileLoop();
 
     return 0;
