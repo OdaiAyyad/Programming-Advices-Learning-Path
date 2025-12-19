@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-int Factorial(short Num)
+int FactorialForLoop(short Num)
 {
     short Fact = 1;
 
@@ -14,13 +14,27 @@ int Factorial(short Num)
     return Fact;
 }
 
+int FactorialWhileLoop(short Num)
+{
+    short Fact = 1;
+    int i = Num;
+    while (i >= 1)
+    {
+        Fact *= i;
+        i--;
+    }
+    return Fact;
+}
+
 int main()
 {
-    short Num;
+    short Num1, Num2;
 
-    cout << "Enter a positive number: "; cin >> Num;
+    cout << "Enter a positive number: "; cin >> Num1;
+    cout << "\nFactorial of " << Num1 << " = " << FactorialForLoop(Num1) << endl << endl;
 
-    cout << "\nFactorial of " << Num << " = " << Factorial(Num) << endl;
+    cout << "Enter a positive number: "; cin >> Num2;
+    cout << "\nFactorial of " << Num2 << " = " << FactorialForLoop(Num2) << endl << endl;
 
     return 0;
 }
