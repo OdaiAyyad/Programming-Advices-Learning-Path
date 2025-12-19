@@ -37,9 +37,7 @@ int main()
     short Num1, Num2;
 
     cout << "Enter a number: "; cin >> Num1;
-    cout << OddNumbersSummationForLoop(Num1) << endl;
-        
-    cout << "\n\n";
+    cout << OddNumbersSummationForLoop(Num1) << endl << endl;
 
     cout << "Enter a number: "; cin >> Num2;
     cout << OddNumbersSummationWhileLoop(Num2) << endl;
