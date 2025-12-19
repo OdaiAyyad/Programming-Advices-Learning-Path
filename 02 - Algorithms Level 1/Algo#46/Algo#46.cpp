@@ -14,7 +14,6 @@ void PrintNumbers()
 int main()
 {
     PrintNumbers();
-    cout << endl;
 
     return 0;
 }
