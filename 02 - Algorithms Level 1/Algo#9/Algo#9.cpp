@@ -1,25 +1,16 @@
 #include <iostream>
 using namespace std;
 
-struct stNumbers
+void ReadNumbers(int& Num1, int& Num2, int& Num3)
 {
-    int num1, num2, num3;
-};
-
-stNumbers ReadNumbers()
-{
-    stNumbers Numbers;
-
-    cout << "Enter the first number: "; cin >> Numbers.num1;
-    cout << "Enter the second number: "; cin >> Numbers.num2;
-    cout << "Enter the third number: "; cin >> Numbers.num3;
-
-    return Numbers;
+    cout << "Enter the first number: "; cin >> Num1;
+    cout << "Enter the second number: "; cin >> Num2;
+    cout << "Enter the third number: "; cin >> Num3;
 }
 
-int CalculateSummation(stNumbers Numbers)
+int CalculateSummation(int Num1, int Num2, int Num3)
 {
-    return Numbers.num1 + Numbers.num2 + Numbers.num3;
+    return Num1 + Num2 + Num3;
 }
 
 void PrintResults(int Total)
@@ -29,7 +20,10 @@ void PrintResults(int Total)
 
 int main()
 {
-    PrintResults(CalculateSummation(ReadNumbers()));
+    int Num1, Num2, Num3;
+
+    ReadNumbers(Num1, Num2, Num3);
+    PrintResults(CalculateSummation(Num1, Num2, Num3));
 
     return 0;
 }
