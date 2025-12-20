@@ -22,9 +22,9 @@ int CalculateSummation(stNumbers Numbers)
     return Numbers.num1 + Numbers.num2 + Numbers.num3;
 }
 
-void PrintResults(int Sum)
+void PrintResults(int Total)
 {
-    cout << "\nTotal = " << Sum << endl;
+    cout << "\nTotal = " << Total << endl;
 }
 
 int main()
