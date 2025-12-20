@@ -3,22 +3,37 @@
 #include <cmath>
 using namespace std;
 
-int main()
+struct stInfo
 {
     short Age;
     bool HasDriverLicense;
+};
 
-    cout << "Enter your age: "; cin >> Age;
-    cout << "Do you have a driver license? "; cin >> HasDriverLicense;
+stInfo ReadInfo()
+{
+    stInfo Info;
+    cout << "Enter your age: "; cin >> Info.Age;
+    cout << "Do you have a driver license? "; cin >> Info.HasDriverLicense;
 
-    if (Age > 21 && HasDriverLicense == true)
-    {
+    return Info;    
+}
+
+bool IsAccepted(stInfo Info)
+{
+    return (Info.Age > 21 && Info.HasDriverLicense == true);
+}
+
+void PrintResults(stInfo Info)
+{
+    if (IsAccepted(Info))
         cout << "Hired!\n";
-    }
     else
-    {
         cout << "Rejected!\n";
-    }
+}
+
+int main()
+{
+    PrintResults(ReadInfo());
 
     return 0;
 }
