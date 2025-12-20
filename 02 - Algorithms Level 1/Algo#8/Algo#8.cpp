@@ -22,9 +22,9 @@ bool CheckMark(short Mark)
 void PrintResult(short Mark)
 {
     if(CheckMark(Mark) == true)
-        cout << "PASS!\n";
+        cout << "\nPASS!\n";
     else
-        cout << "Fail.\n";
+        cout << "\nFail.\n";
 }
 
 int main()
