@@ -1,13 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int ReadNumber()
 {
     int Num;
-
     cout << "Enter a Number: "; cin >> Num;
 
-    cout << "Half of " << Num << " is " << Num / 2 << endl;
+    return Num;
+}
+
+float CalculateHalf(int Num)
+{
+    return float(Num / 2);
+}
+
+void PrintHalf(int Num)
+{
+    cout << "Half of " << Num << " is " << CalculateHalf(Num) << endl;
+}
+
+int main()
+{
+    PrintHalf(ReadNumber());
 
     return 0;
 }
