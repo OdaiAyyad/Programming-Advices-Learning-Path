@@ -1,15 +1,34 @@
 #include <iostream>
 using namespace std;
 
+void ReadMarks(int& Mark1, int& Mark2, int& Mark3)
+{
+    cout << "Enter the first number: "; cin >> Mark1;
+    cout << "Enter the second number: "; cin >> Mark2;
+    cout << "Enter the third number: "; cin >> Mark3;
+}
+
+int MarksSummation(int Mark1, int Mark2, int Mark3)
+{
+    return Mark1 + Mark2 + Mark3;
+}
+
+float CalculateAverage(int Mark1, int Mark2, int Mark3)
+{
+    return float(MarksSummation(Mark1, Mark2, Mark3)) / 3;
+}
+
+void PrintResults(float Average)
+{
+    cout << "\nAverage = " << Average << endl;
+}
+
 int main()
 {
-    int mark1, mark2, mark3;
+    int Mark1, Mark2, Mark3;
 
-    cout << "Enter the first mark: "; cin >> mark1;
-    cout << "Enter the second mark: "; cin >> mark2;
-    cout << "Enter the third mark: "; cin >> mark3;
-
-    cout << "Average = " << (mark1 + mark2 + mark3) / 3 << endl;
+    ReadMarks(Mark1, Mark2, Mark3);
+    PrintResults(CalculateAverage(Mark1, Mark2, Mark3));
 
     return 0;
 }
