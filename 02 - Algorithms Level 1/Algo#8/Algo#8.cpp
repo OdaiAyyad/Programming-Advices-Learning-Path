@@ -3,6 +3,8 @@
 #include <cmath>
 using namespace std;
 
+enum enPassFail { Pass = 1, Fail = 2};
+
 int ReadMark()
 {
     short Mark;
@@ -11,17 +13,17 @@ int ReadMark()
     return Mark;
 }
 
-bool CheckMark(short Mark)
+enPassFail CheckMark(short Mark)
 {
     if (Mark >= 50)
-        return true;
+        return enPassFail::Pass;
     else
-        return false;
+        return enPassFail::Fail;
 }
 
-void PrintResult(short Mark)
+void PrintResults(short Mark)
 {
-    if(CheckMark(Mark) == true)
+    if(CheckMark(Mark) == enPassFail::Pass)
         cout << "\nPASS!\n";
     else
         cout << "\nFail.\n";
@@ -29,7 +31,7 @@ void PrintResult(short Mark)
 
 int main()
 {
-    PrintResult(ReadMark());
+    PrintResults(ReadMark());
 
     return 0;
 }
