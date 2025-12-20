@@ -3,14 +3,14 @@
 #include <cmath>
 using namespace std;
 
-void PrintName()
+void PrintName(string Name)
 {
-    cout << "Odai Ayyad" << endl;
+    cout << "My Name is: " << Name << endl;
 }
 
 int main()
 {
-    PrintName();
+    PrintName("Odai");
 
     return 0;
 }
