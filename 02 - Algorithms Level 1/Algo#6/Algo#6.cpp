@@ -18,14 +18,23 @@ stFullName ReadFullName()
     return Name;
 }
 
-void PrintFullName(stFullName Name)
+string GetFullName(stFullName Name)
 {
-    cout << "\nFull Name: " << Name.FisrtName << " " << Name.LastName << "\n\n";
+    string FullName = "";
+
+    FullName = Name.FisrtName + " " + Name.LastName;
+
+    return FullName;
+}
+
+void PrintFullName(string FullName)
+{
+    cout << "\nFull Name: " << FullName << "\n\n";
 }
 
 int main()
 {
-    PrintFullName(ReadFullName());
+    PrintFullName(GetFullName(ReadFullName()));
 
     return 0;
 }
