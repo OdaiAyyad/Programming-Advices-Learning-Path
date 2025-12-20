@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int ReadNumber()
@@ -16,7 +17,7 @@ float CalculateHalf(int Num)
 
 void PrintHalf(int Num)
 {
-    cout << "Half of " << Num << " is " << CalculateHalf(Num) << endl;
+    cout << "Half of " + to_string(Num) + " is " + to_string(CalculateHalf(Num));
 }
 
 int main()
