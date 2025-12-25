@@ -2,21 +2,30 @@
 #include <cmath>
 using namespace std;
 
-float Area(float A, float D)
+void ReadDimensions(float& A, float& D)
+{
+    cout << "Enter rectangle side length: "; cin >> A;
+    cout << "Enter diognal length: "; cin >> D;
+}
+
+float CalculateArea(float A, float D)
 {
     float Area = A * (sqrt(pow(D, 2) - pow(A, 2)));
 
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "Area = " << Area << endl;
+}
+
 int main()
 {
-    float D, A;
+    float A, D;
 
-    cout << "Enter rectangle side length: "; cin >> A;
-    cout << "Enter diognal length: "; cin >> D;
-
-    cout << "Area = " << Area(A, D) << endl;
+    ReadDimensions(A, D);
+    PrintArea(CalculateArea(A, D));
 
     return 0;
 }
