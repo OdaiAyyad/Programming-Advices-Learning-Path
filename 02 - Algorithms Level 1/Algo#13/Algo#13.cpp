@@ -3,10 +3,11 @@
 #include <cmath>
 using namespace std;
 
-void ReadNumbers(int& Num1, int& Num2)
+void ReadNumbers(int& Num1, int& Num2, int& Num3)
 {
     cout << "Enter the first number: "; cin >> Num1;
     cout << "Enter the second number: "; cin >> Num2;
+    cout << "Enter the third number: "; cin >> Num3;
 }
 
 int MaxOfTwoNumbers(int Num1, int Num2)
