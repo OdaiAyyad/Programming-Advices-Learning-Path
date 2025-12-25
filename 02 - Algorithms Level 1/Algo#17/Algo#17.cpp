@@ -1,12 +1,25 @@
 #include <iostream>
 using namespace std;
 
+void ReadDimensions(float& A, float& H)
+{
+    cout << "Enter the base length: "; cin >> A;
+    cout << "Enter the height: "; cin >> H;
+
+}
+
+float CalculateArea(float A, float H)
+{
+    return float(0.5 * (A * H));
+}
+
+
+
 int main()
 {
-    unsigned int a, b;
+    float A, H;
 
-    cout << "Enter first line length: "; cin >> a;
-    cout << "Enter second line length: "; cin >> b;
+    ReadDimensions(A, H);
 
     cout << "\nArea = " << 0.5*(a * b) << endl;
 
