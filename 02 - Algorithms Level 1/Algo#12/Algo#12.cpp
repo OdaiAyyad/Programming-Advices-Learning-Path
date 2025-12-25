@@ -22,7 +22,7 @@ int MaxOfTwoNumbers(int Num1, int Num2)
 
 void PrintResults(int Max)
 {
-    cout << "The max number is: " << Max << endl;
+    cout << "\nThe max number is: " << Max << endl;
 }
 
 int main()
