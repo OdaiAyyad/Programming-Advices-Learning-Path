@@ -17,7 +17,7 @@ int main()
 
     cout << "Enter the square side length: "; cin >> A;
 
-    cout << "\nArea = " << ceil(Area(A)) << endl;
+    cout << "\nArea = " << Area(A) << endl;
 
     return 0;
 }
