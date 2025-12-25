@@ -7,13 +7,13 @@ void ReadNumbers(int& num1, int& num2)
     cout << "Enter the second number: "; cin >> num2;
 }
 
-void Swap(int &num1, int &num2)
+void Swap(int &A, int &B)
 {
     int temp;
 
-    temp = num2;
-    num2 = num1;
-    num1 = temp;
+    temp = B;
+    B = A;
+    A = temp;
 }
 
 void PrintNumbers(int num1, int num2)
