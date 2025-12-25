@@ -20,7 +20,7 @@ float CalculateArea(float R)
 
 void PrintArea(float Area)
 {
-    cout << "Area = " << ceil(Area) << endl;
+    cout << "\nArea = " << ceil(Area) << endl;
 }
 
 int main()
