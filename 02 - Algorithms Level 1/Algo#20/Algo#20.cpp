@@ -19,11 +19,14 @@ float CalculateArea(float A)
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "\nArea = " << Area << endl;
+}
+
 int main()
 {
-
-
-    cout << "\nArea = " << Area(A) << endl;
-
+    PrintArea(CalculateArea(ReadSquareSide()));
+    
     return 0;
 }
