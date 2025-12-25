@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+void ReadDimension(float A, float B)
+{
+    cout << "Enter first line length: "; cin >> A;
+    cout << "Enter second line length: "; cin >> B;
+}
+
 float Area(float A, float B)
 {
     float Area = A * B;
@@ -8,14 +14,16 @@ float Area(float A, float B)
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "\nArea = " << Area << endl;
+}
+
 int main()
 {
     float A, B;
 
-    cout << "Enter first line length: "; cin >> A;
-    cout << "Enter second line length: "; cin >> B;
-
-    cout << "\nArea = " << Area(A, B) << endl;
+    ReadDimension(A, B);
 
     return 0;
 }
