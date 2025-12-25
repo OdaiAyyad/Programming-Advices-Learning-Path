@@ -10,7 +10,7 @@ float ReadSquareSide()
     return A;
 }
 
-float Area(float A)
+float CalculateArea(float A)
 {
     const float PI = 3.14;
 
