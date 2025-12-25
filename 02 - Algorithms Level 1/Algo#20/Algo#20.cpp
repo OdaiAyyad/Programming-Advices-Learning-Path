@@ -6,7 +6,7 @@ float Area(float A)
 {
     const float PI = 3.14;
 
-    float Area = PI * pow(A, 2) / 4;
+    float Area = (PI * pow(A, 2)) / 4;
 
     return Area;
 }
