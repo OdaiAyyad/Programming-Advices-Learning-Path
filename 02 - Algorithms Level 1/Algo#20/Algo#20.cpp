@@ -2,6 +2,14 @@
 #include <cmath>
 using namespace std;
 
+float ReadSquareSide()
+{
+    float A;
+    cout << "Enter the square side length: "; cin >> A;
+
+    return A;
+}
+
 float Area(float A)
 {
     const float PI = 3.14;
@@ -13,9 +21,7 @@ float Area(float A)
 
 int main()
 {
-    unsigned int A;
 
-    cout << "Enter the square side length: "; cin >> A;
 
     cout << "\nArea = " << Area(A) << endl;
 
