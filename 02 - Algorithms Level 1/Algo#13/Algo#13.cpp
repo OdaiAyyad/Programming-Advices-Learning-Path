@@ -10,13 +10,20 @@ void ReadNumbers(int& Num1, int& Num2, int& Num3)
     cout << "Enter the third number: "; cin >> Num3;
 }
 
-int MaxOfTwoNumbers(int Num1, int Num2, int Num3)
+int MaxOfThreeNumbers(int Num1, int Num2, int Num3)
 {
     int Max = 0;
+
     if (Num1 > Num2)
-        Max = Num1;
+        if (Num1 > Num3)
+            Max = Num1;
+        else
+            Max = Num3;
     else
-        Max = Num2;
+        if (Num2 > Num3)
+            Max = Num2;
+        else
+            Max = Num3;
 
     return Max;
 }
@@ -31,7 +38,7 @@ int main()
     int Num1, Num2, Num3;
 
     ReadNumbers(Num1, Num2, Num3);
-    PrintResults(MaxOfTwoNumbers(Num1, Num2, Num3));
+    PrintResults(MaxOfThreeNumbers(Num1, Num2, Num3));
 
     return 0;
 }
