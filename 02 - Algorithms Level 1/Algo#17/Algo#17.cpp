@@ -13,15 +13,17 @@ float CalculateArea(float A, float H)
     return float(0.5 * (A * H));
 }
 
-
+void PrintArea(float Area)
+{
+    cout << "\nArea = " << Area << endl;
+}
 
 int main()
 {
     float A, H;
 
     ReadDimensions(A, H);
-
-    cout << "\nArea = " << 0.5*(a * b) << endl;
+    PrintArea(CalculateArea(A, H));
 
     return 0;
 }
