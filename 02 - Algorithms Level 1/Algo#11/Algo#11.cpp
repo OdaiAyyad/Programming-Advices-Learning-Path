@@ -24,7 +24,10 @@ float AverageCalculator(float Marks[3])
 
 enPassFail CheckAverage(float Average)
 {
-    if()
+    if (Average >= 50)
+        return enPassFail::Pass;
+    else
+        return enPassFail::Fail;
 }
 
 void PrintResults(float Average)
@@ -42,19 +45,7 @@ int main()
     float Marks[3];
 
     ReadMarks(Marks);
-
-    float AVG = AverageCalculator(Marks);
-
-    cout << "\nMarks Average = " << AVG << endl;
-    
-    if (AVG >= 50)
-    {
-        cout << "PASS!\n";
-    }
-    else
-    {
-        cout << "Fail.\n";
-    }
+    PrintResults(AverageCalculator(Marks));
 
     return 0;
 }
