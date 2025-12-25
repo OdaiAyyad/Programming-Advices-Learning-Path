@@ -12,14 +12,14 @@ float ReadDiameter()
 float CalculateArea(float D)
 {
     const float PI = 3.14;
-    float Area = PI * pow(D, 2) / 4;
+    float Area = (PI * pow(D, 2)) / 4;
 
     return Area;
 }
 
 void PrintArea(float Area)
 {
-    cout << "\nArea = " << ceil(Area) << endl;
+    cout << "\nArea = " << Area << endl;
 }
 
 int main()
