@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-void ReadTriangleDimensions(float A, float B)
+void ReadTriangleDimensions(float& A, float& B)
 {
     cout << "Enter triangle side length: "; cin >> A;
     cout << "Enter triangle base length: "; cin >> B;
