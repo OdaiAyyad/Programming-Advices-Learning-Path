@@ -3,6 +3,14 @@
 #include <cmath>
 using namespace std;
 
+int ReadNumber()
+{
+    int N;
+    cout << "Enter a number: "; cin >> N;
+
+    return N;
+}
+
 int OddNumbersSummationForLoop(short Num)
 {
     short Sum = 0;
