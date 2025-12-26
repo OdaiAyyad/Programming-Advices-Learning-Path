@@ -24,7 +24,7 @@ void PrintNumbersUsingWhileLoop(int N)
 {
     int counter = N + 1;
 
-    while (counter >= 1)
+    while (counter > 1)
     {
         counter--;
         cout << counter << endl;
