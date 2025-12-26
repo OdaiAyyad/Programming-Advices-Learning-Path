@@ -11,27 +11,12 @@ void PrintNumbersForLoop(short Num)
     }
 }
 
-void PrintNumbersWhileLoop(short Num)
-{
-    int i = 1;
-    while (i <= Num)
-    {
-        cout << i << endl;
-        i++;
-    }
-}
-
 int main()
 {
     short Num1, Num2;
 
     cout << "Enter a number: "; cin >> Num1;
     PrintNumbersForLoop(Num1);
-
-    cout << "\n\n";
-
-    cout << "Enter a number: "; cin >> Num2;
-    PrintNumbersWhileLoop(Num2);
 
     return 0;
 }
