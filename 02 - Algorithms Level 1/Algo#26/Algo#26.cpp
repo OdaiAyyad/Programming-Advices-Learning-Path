@@ -5,23 +5,37 @@ using namespace std;
 
 int ReadNumber()
 {
-    int Num;
-    cout << "Enter a number: "; cin >> Num;
+    int N;
+    cout << "Enter a number: "; cin >> N;
 
-    return Num;
+    return N;
 }
 
-void PrintNumbersForLoop(short Num)
+void PrintNumbersUsingForLoop(int N)
 {
-    for (int i = 1; i <= Num; i++)
+    for (int i = 1; i <= N; i++)
     {
         cout << i << endl;
     }
 }
 
+void PrintNumbersUsingWhileLoop(int N)
+{
+    int i = 1;
+
+    while (i <= N)
+    {
+        cout << i << endl;
+        i++;
+    }
+}
+
 int main()
 {
-    PrintNumbersForLoop(ReadNumber());
+    int N = ReadNumber();
+
+    PrintNumbersUsingForLoop(N);
+    PrintNumbersUsingWhileLoop(N);
 
     return 0;
 }
