@@ -32,14 +32,27 @@ void PrintNumbersUsingWhileLoop(int N)
     cout << endl;
 }
 
+void PrintNumbersUsingDoWhileLoop(int N)
+{
+    int i = 1;
+
+    do
+    {
+        cout << i << endl;
+        i++;
+
+    } while (i <= N);
+
+    cout << endl;
+}
+
 int main()
 {
     int N = ReadNumber();
 
     PrintNumbersUsingForLoop(N);
-
     PrintNumbersUsingWhileLoop(N);
-
+    PrintNumbersUsingDoWhileLoop(N);
 
     return 0;
 }
