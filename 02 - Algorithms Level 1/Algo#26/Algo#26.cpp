@@ -35,7 +35,9 @@ int main()
     int N = ReadNumber();
 
     PrintNumbersUsingForLoop(N);
+    cout << "\n\n";
     PrintNumbersUsingWhileLoop(N);
+    cout << "\n\n";
 
     return 0;
 }
