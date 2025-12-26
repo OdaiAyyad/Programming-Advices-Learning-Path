@@ -2,6 +2,12 @@
 #include <cmath>
 using namespace std;
 
+void ReadTriangleDimensions(float A, float B)
+{
+    cout << "Enter triangle side length: "; cin >> A;
+    cout << "Enter triangle base length: "; cin >> B;
+}
+
 float Area(float a, float b)
 {
     const float PI = 3.14;
@@ -11,14 +17,17 @@ float Area(float a, float b)
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "Area = " << Area << endl;
+}
+
 int main()
 {
-    float a, b;
+    float A, B;
 
-    cout << "Enter triangle side length: "; cin >> a;
-    cout << "Enter triangle base length: "; cin >> b;
- 
-    cout << "Area = " << floor(Area(a, b)) << endl;
+    ReadTriangleDimensions(A, B);
+    
 
     return 0;
 }
