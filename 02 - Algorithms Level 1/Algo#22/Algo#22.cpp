@@ -8,7 +8,7 @@ void ReadTriangleDimensions(float A, float B)
     cout << "Enter triangle base length: "; cin >> B;
 }
 
-float Area(float a, float b)
+float CalculateArea(float a, float b)
 {
     const float PI = 3.14;
 
@@ -27,7 +27,7 @@ int main()
     float A, B;
 
     ReadTriangleDimensions(A, B);
-    
+    PrintArea(CalculateArea(A, B));
 
     return 0;
 }
