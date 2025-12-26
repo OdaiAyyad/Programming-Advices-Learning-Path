@@ -22,26 +22,26 @@ void PrintNumbersUsingForLoop(int N)
 
 void PrintNumbersUsingWhileLoop(int N)
 {
-    int i = 1;
+    int counter = 0;
 
-    while (i <= N)
+    while (counter < N)
     {
-        cout << i << endl;
-        i++;
+        counter++;
+        cout << counter << endl;
     }
     cout << endl;
 }
 
 void PrintNumbersUsingDoWhileLoop(int N)
 {
-    int i = 1;
+    int counter = 0;
 
     do
     {
-        cout << i << endl;
-        i++;
+        counter++;
+        cout << counter << endl;
 
-    } while (i <= N);
+    } while (counter < N);
 
     cout << endl;
 }
