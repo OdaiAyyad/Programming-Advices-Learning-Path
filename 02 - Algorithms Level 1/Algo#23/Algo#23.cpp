@@ -3,6 +3,13 @@
 #include <cmath>
 using namespace std;
 
+void ReadDimensions(float& a, float& b, float& c)
+{
+    cout << "Enter a: "; cin >> a;
+    cout << "Enter b: "; cin >> b;
+    cout << "Enter c: "; cin >> c;
+}
+
 float Area(float a, float b, float c)
 {
     const float PI = 3.14;
@@ -13,14 +20,17 @@ float Area(float a, float b, float c)
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "\nArea = " << Area << endl;
+}
+
 int main()
 {
     float a, b, c;
-    cout << "Enter a: "; cin >> a;
-    cout << "Enter b: "; cin >> b;
-    cout << "Enter c: "; cin >> c;
 
-    cout << "\nArea = " << Area(a, b, c) << endl;
+    ReadDimensions(a, b, c);
+    PrintArea(Area(a, b, c));
 
     return 0;
 }
