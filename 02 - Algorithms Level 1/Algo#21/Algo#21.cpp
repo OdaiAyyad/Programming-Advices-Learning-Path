@@ -10,7 +10,7 @@ float ReadCircleCircumference()
     return L;
 }
 
-float Area(float L)
+float CalculateArea(float L)
 {
     const float PI = 3.14;
 
@@ -19,11 +19,14 @@ float Area(float L)
     return Area;
 }
 
+void PrintArea(float Area)
+{
+    cout << "Area = " << Area << endl;
+}
+
 int main()
 {
-
-
-    cout << "Area = " << floor(Area(L)) << endl;
+    PrintArea(CalculateArea(ReadCircleCircumference()));
 
     return 0;
 }
