@@ -11,12 +11,21 @@ int ReadNumber()
     return N;
 }
 
-void PrintNumbersForLoop(short Num)
+void PrintNumbersUsingForLoop(int N)
+{
+    for (int i = N; i > 1; i--)
+    {
+        cout << i << endl;
+    }
+    cout << endl;
+}
+
+void PrintNumbersUsingWhileLoop(int N)
 {
 
 }
 
-void PrintNumbersWhileLoop(short Num)
+void PrintNumbersUsingDoWhileLoop(int N)
 {
 
 }
