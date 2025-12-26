@@ -3,6 +3,14 @@
 #include <cmath>
 using namespace std;
 
+int ReadNumber()
+{
+    int Num;
+    cout << "Enter a number: "; cin >> Num;
+
+    return Num;
+}
+
 void PrintNumbersForLoop(short Num)
 {
     for (int i = 1; i <= Num; i++)
@@ -13,10 +21,7 @@ void PrintNumbersForLoop(short Num)
 
 int main()
 {
-    short Num1, Num2;
-
-    cout << "Enter a number: "; cin >> Num1;
-    PrintNumbersForLoop(Num1);
+    PrintNumbersForLoop(ReadNumber());
 
     return 0;
 }
