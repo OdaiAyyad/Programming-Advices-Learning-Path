@@ -37,15 +37,32 @@ int OddNumbersSummationUsingForLoop(int N)
 int OddNumbersSummationUsingWhileLoop(int N)
 {
     short Sum = 0;
-    int i = 1;
+    int counter = 0;
 
     cout << "\nOdd numbers summation using While loop: ";
-    while (i <= N)
+    while (counter < N)
     {
-        if (CheckOddEven(i) == enOddEven::Odd)
-            Sum += i;
-        i++;
+        counter++;
+        if (CheckOddEven(counter) == enOddEven::Odd)
+            Sum += counter;
     }
+    return Sum;
+}
+
+int OddNumbersSummationUsingDoWhileLoop(int N)
+{
+    short Sum = 0;
+    int counter = 0;
+
+    cout << "\nOdd numbers summation using Do While loop: ";
+    do
+    {
+        counter++;
+        if (CheckOddEven(counter) == enOddEven::Odd)
+            Sum += counter;
+
+    } while (counter < N);
+
     return Sum;
 }
 
@@ -55,7 +72,7 @@ int main()
 
     cout << OddNumbersSummationUsingForLoop(N) << endl;
     cout << OddNumbersSummationUsingWhileLoop(N) << endl;
-    
+    cout << OddNumbersSummationUsingDoWhileLoop(N) << endl;
 
     return 0;
 }
