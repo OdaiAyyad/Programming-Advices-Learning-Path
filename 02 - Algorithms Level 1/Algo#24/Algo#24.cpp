@@ -19,9 +19,9 @@ bool CheckNumberInRange(int Number, int From, int To)
 void PrintResults(short Age)
 {
     if (CheckNumberInRange(Age, 18, 45))
-        cout << "Valid Age!\n";
+        cout << "\nValid Age!\n";
     else
-        cout << "Invalid Age.\n";
+        cout << "\nInvalid Age.\n";
 }
 
 int main()
