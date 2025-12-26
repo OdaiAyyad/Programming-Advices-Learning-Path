@@ -31,7 +31,7 @@ int ReadUntilAgeBetween(int From, int To)
 
 void PrintResults(short Age)
 {
-    cout << "Your age is: " << Age << endl;
+    cout << "\nYour age is: " << Age << endl;
 }
 
 int main()
