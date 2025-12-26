@@ -6,7 +6,7 @@ using namespace std;
 short ReadAge()
 {
     short Age;
-    cout << "Enter your age: "; cin >> Age;
+    cout << "Enter age between 18 and 45: "; cin >> Age;
 
     return Age;
 }
@@ -18,16 +18,20 @@ bool ValidateNumberInRange(int Number, int From, int To)
 
 int ReadUntilAgeBetween(int From, int To)
 {
-    while (!(ValidateNumberInRange(ReadAge(), From, To)))
+    short Age = 0;
+
+    do
     {
-        cout << "Invalid Age!";
-        ReadAge();
-    }
+        Age = ReadAge();
+
+    } while (!ValidateNumberInRange(Age, From, To));
+
+    return Age;
 }
 
 void PrintResults(short Age)
 {
-    if()
+    cout << "Your age is: " << Age << endl;
 }
 
 int main()
