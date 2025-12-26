@@ -3,20 +3,30 @@
 #include <cmath>
 using namespace std;
 
-int main()
+short ReadAge()
 {
     short Age;
-
     cout << "Enter your age: "; cin >> Age;
 
-    if (Age >= 18 && Age < 45)
-    {
+    return Age;
+}
+
+bool CheckNumberInRange(int Number, int From, int To)
+{
+    return (Number >= From && Number <= To);
+}
+
+void PrintResults(short Age)
+{
+    if (CheckNumberInRange(Age, 18, 45))
         cout << "Valid Age!\n";
-    }
     else
-    {
         cout << "Invalid Age.\n";
-    }
+}
+
+int main()
+{
+    PrintResults(ReadAge());
 
     return 0;
 }
