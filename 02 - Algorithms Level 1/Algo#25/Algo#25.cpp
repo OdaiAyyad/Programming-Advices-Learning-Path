@@ -32,7 +32,7 @@ void PrintResults(short Age)
 
 int main()
 {
-
+    PrintResults(ReadUntilAgeBetween(18, 45));
 
     return 0;
 }
