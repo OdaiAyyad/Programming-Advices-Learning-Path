@@ -21,7 +21,7 @@ float CalculateArea(float L)
 
 void PrintArea(float Area)
 {
-    cout << "Area = " << Area << endl;
+    cout << "\nArea = " << Area << endl;
 }
 
 int main()
