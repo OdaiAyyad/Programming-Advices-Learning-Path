@@ -10,7 +10,7 @@ void ReadDimensions(float& a, float& b, float& c)
     cout << "Enter c: "; cin >> c;
 }
 
-float Area(float a, float b, float c)
+float CalculateArea(float a, float b, float c)
 {
     const float PI = 3.14;
     float P = (a + b + c) / 2;
@@ -30,7 +30,7 @@ int main()
     float a, b, c;
 
     ReadDimensions(a, b, c);
-    PrintArea(Area(a, b, c));
+    PrintArea(CalculateArea(a, b, c));
 
     return 0;
 }
