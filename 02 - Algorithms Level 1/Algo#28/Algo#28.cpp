@@ -3,6 +3,8 @@
 #include <cmath>
 using namespace std;
 
+enum enOddEven { Odd = 1, Even = 2 };
+
 int ReadNumber()
 {
     int N;
@@ -11,30 +13,37 @@ int ReadNumber()
     return N;
 }
 
-int OddNumbersSummationForLoop(short Num)
+enOddEven CheckOddEven(int N)
+{
+    if (N % 2 != 0)
+        return enOddEven::Odd;
+    else
+        return enOddEven::Even;
+}
+
+int OddNumbersSummationUsingForLoop(int N)
 {
     short Sum = 0;
 
-    for (int i = 1; i <= Num; i++)
+    cout << "\nOdd numbers summation using For loop: ";
+    for (int i = 1; i <= N; i++)
     {
-        if (i % 2 != 0)
-        {
+        if(CheckOddEven(i) == enOddEven::Odd)
             Sum += i;
-        }
     }
     return Sum;
 }
 
-int OddNumbersSummationWhileLoop(short Num)
+int OddNumbersSummationUsingWhileLoop(int N)
 {
     short Sum = 0;
     int i = 1;
-    while (i <= Num)
+
+    cout << "\nOdd numbers summation using While loop: ";
+    while (i <= N)
     {
-        if (i % 2 != 0)
-        {
+        if (CheckOddEven(i) == enOddEven::Odd)
             Sum += i;
-        }
         i++;
     }
     return Sum;
@@ -42,13 +51,11 @@ int OddNumbersSummationWhileLoop(short Num)
 
 int main()
 {
-    short Num1, Num2;
+    int N = ReadNumber();
 
-    cout << "Enter a number: "; cin >> Num1;
-    cout << OddNumbersSummationForLoop(Num1) << endl << endl;
-
-    cout << "Enter a number: "; cin >> Num2;
-    cout << OddNumbersSummationWhileLoop(Num2) << endl;
+    cout << OddNumbersSummationUsingForLoop(N) << endl;
+    cout << OddNumbersSummationUsingWhileLoop(N) << endl;
+    
 
     return 0;
 }
