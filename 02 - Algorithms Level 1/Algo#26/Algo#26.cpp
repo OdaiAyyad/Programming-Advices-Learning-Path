@@ -17,6 +17,7 @@ void PrintNumbersUsingForLoop(int N)
     {
         cout << i << endl;
     }
+    cout << endl;
 }
 
 void PrintNumbersUsingWhileLoop(int N)
@@ -28,6 +29,7 @@ void PrintNumbersUsingWhileLoop(int N)
         cout << i << endl;
         i++;
     }
+    cout << endl;
 }
 
 int main()
@@ -35,9 +37,9 @@ int main()
     int N = ReadNumber();
 
     PrintNumbersUsingForLoop(N);
-    cout << "\n\n";
+
     PrintNumbersUsingWhileLoop(N);
-    cout << "\n\n";
+
 
     return 0;
 }
