@@ -15,6 +15,7 @@ int FactorialUsingForLoop(short N)
 {
     short Fact = 1;
 
+    cout << "\nFactorial of " << N << " using For loop = ";
     for (int i = N; i >= 1; i--)
     {
         Fact *= i;
@@ -27,6 +28,7 @@ int FactorialUsingWhileLoop(short N)
     short Fact = 1;
     int i = N;
 
+    cout << "\nFactorial of " << N << " using For loop = ";
     while (i > 1)
     {
         Fact *= i;
@@ -53,8 +55,8 @@ int main()
 {
     int N = ReadNumber();
 
-    cout << "\nFactorial of " << Num1 << " = " << FactorialForLoop(Num1) << endl << endl;
-    cout << "\nFactorial of " << Num2 << " = " << FactorialForLoop(Num2) << endl << endl;
+    cout << "\nFactorial of " << N << " = " << FactorialForLoop(Num1) << endl << endl;
+    cout << "\nFactorial of " << N << " = " << FactorialForLoop(Num2) << endl << endl;
 
     return 0;
 }
