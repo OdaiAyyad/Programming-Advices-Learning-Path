@@ -56,8 +56,9 @@ int main()
 {
     int N = ReadNumber();
 
-    cout << FactorialForLoop(Num1) << endl << endl;
-    cout << FactorialForLoop(Num2) << endl << endl;
+    cout << FactorialUsingForLoop(N) << endl;
+    cout << FactorialUsingWhileLoop(N) << endl;
+    cout << FactorialUsingDoWhileLoop(N) << endl;
 
     return 0;
 }
