@@ -52,8 +52,8 @@ int main()
 {
     int N = ReadNumber();
 
-    cout << EvenNumbersSummationForLoop(N) << endl;
-    cout << EvenNumbersSummationWhileLoop(N) << endl;
+    cout << EvenNumbersSummationUsingForLoop(N) << endl;
+    cout << EvenNumbersSummationUsingWhileLoop(N) << endl;
 
     return 0;
 }
