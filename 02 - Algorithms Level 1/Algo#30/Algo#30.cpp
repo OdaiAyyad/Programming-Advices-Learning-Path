@@ -36,12 +36,8 @@ int FactorialWhileLoop(short Num)
 
 int main()
 {
-    short Num1, Num2;
 
-    cout << "Enter a positive number: "; cin >> Num1;
     cout << "\nFactorial of " << Num1 << " = " << FactorialForLoop(Num1) << endl << endl;
-
-    cout << "Enter a positive number: "; cin >> Num2;
     cout << "\nFactorial of " << Num2 << " = " << FactorialForLoop(Num2) << endl << endl;
 
     return 0;
