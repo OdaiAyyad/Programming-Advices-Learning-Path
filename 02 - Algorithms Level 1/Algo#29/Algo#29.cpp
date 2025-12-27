@@ -34,7 +34,7 @@ int EvenNumbersSummationUsingForLoop(int N)
     return Sum;
 }
 
-int EvenNumbersSummationWhileLoop(short Num)
+int EvenNumbersSummationUsingWhileLoop(short Num)
 {
     short Sum = 0;
     int i = 1;
