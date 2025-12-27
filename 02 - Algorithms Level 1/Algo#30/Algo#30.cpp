@@ -56,8 +56,8 @@ int main()
 {
     int N = ReadNumber();
 
-    cout << "\nFactorial of " << N << " = " << FactorialForLoop(Num1) << endl << endl;
-    cout << "\nFactorial of " << N << " = " << FactorialForLoop(Num2) << endl << endl;
+    cout << FactorialForLoop(Num1) << endl << endl;
+    cout << FactorialForLoop(Num2) << endl << endl;
 
     return 0;
 }
