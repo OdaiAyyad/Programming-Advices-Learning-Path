@@ -37,9 +37,9 @@ int EvenNumbersSummationUsingForLoop(int N)
 int EvenNumbersSummationUsingWhileLoop(short Num)
 {
     short Sum = 0;
-    int i = 1;
+    int counter = 0;
 
-    while (i <= Num)
+    while (counter <= Num)
     {
         if (i % 2 == 0)
         {
