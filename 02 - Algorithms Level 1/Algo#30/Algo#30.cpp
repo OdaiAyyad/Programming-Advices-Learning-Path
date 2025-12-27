@@ -11,7 +11,7 @@ int ReadNumber()
     return N;
 }
 
-int FactorialForLoop(short Num)
+int FactorialUsingForLoop(short Num)
 {
     short Fact = 1;
 
@@ -22,7 +22,7 @@ int FactorialForLoop(short Num)
     return Fact;
 }
 
-int FactorialWhileLoop(short Num)
+int FactorialUsingWhileLoop(short Num)
 {
     short Fact = 1;
     int i = Num;
