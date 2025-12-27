@@ -3,10 +3,14 @@
 #include <cmath>
 using namespace std;
 
-int ReadNumber()
+int ReadPositiveNumber(string Message)
 {
     int N;
-    cout << "Enter a positive number: "; cin >> N;
+    do
+    {
+        cout << Message; cin >> N;
+
+    } while (N < 0);
 
     return N;
 }
@@ -54,7 +58,7 @@ int FactorialUsingDoWhileLoop(short N)
 
 int main()
 {
-    int N = ReadNumber();
+    int N = ReadPositiveNumber("Enter a positive number: ");
 
     cout << FactorialUsingForLoop(N) << endl;
     cout << FactorialUsingWhileLoop(N) << endl;
