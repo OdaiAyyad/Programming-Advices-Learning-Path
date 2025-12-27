@@ -13,10 +13,11 @@ int ReadNumber()
     return N;
 }
 
-int EvenNumbersSummationForLoop(short Num)
+int EvenNumbersSummationUsingForLoop(short Num)
 {
     short Sum = 0;
 
+    cout << "Even numbers summation using For loop: ";
     for (int i = 1; i <= Num; i++)
     {
         if (i % 2 == 0)
