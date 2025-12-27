@@ -28,7 +28,7 @@ int FactorialUsingWhileLoop(short N)
     short Fact = 1;
     int i = N;
 
-    cout << "\nFactorial of " << N << " using For loop = ";
+    cout << "\nFactorial of " << N << " using While loop = ";
     while (i > 1)
     {
         Fact *= i;
@@ -42,6 +42,7 @@ int FactorialUsingDoWhileLoop(short N)
     short Fact = 1;
     int i = N;
 
+    cout << "\nFactorial of " << N << " using Do While loop = ";
     do
     {
         Fact *= i;
