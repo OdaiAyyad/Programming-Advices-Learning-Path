@@ -23,6 +23,7 @@ void PowerOf2_3_4(int N)
 
 int main()
 {
+    PowerOf2_3_4(ReadNumber());
 
     return 0;
 }
