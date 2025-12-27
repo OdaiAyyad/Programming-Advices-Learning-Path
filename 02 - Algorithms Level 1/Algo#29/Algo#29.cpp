@@ -39,6 +39,7 @@ int EvenNumbersSummationUsingWhileLoop(int N)
     short Sum = 0;
     int counter = 0;
 
+    cout << "Even numbers summation using While loop: ";
     while (counter <= N)
     {
         counter++;
