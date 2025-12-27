@@ -59,7 +59,7 @@ int EvenNumbersSummationUsingDoWhileLoop(int N)
     do
     {
         counter++;
-        if (CheckOddEven(N) == enOddEven::Even)
+        if (CheckOddEven(counter) == enOddEven::Even)
             Sum += counter;
 
     } while (counter < N);
@@ -73,6 +73,7 @@ int main()
 
     cout << EvenNumbersSummationUsingForLoop(N) << endl;
     cout << EvenNumbersSummationUsingWhileLoop(N) << endl;
+    cout << EvenNumbersSummationUsingDoWhileLoop(N) << endl;
 
     return 0;
 }
