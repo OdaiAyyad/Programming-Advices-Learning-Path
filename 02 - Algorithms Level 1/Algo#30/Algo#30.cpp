@@ -3,6 +3,14 @@
 #include <cmath>
 using namespace std;
 
+int ReadNumber()
+{
+    int N;
+    cout << "Enter a positive number: "; cin >> N;
+
+    return N;
+}
+
 int FactorialForLoop(short Num)
 {
     short Fact = 1;
