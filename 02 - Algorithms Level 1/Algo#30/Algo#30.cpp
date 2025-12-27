@@ -11,21 +11,21 @@ int ReadNumber()
     return N;
 }
 
-int FactorialUsingForLoop(short Num)
+int FactorialUsingForLoop(short N)
 {
     short Fact = 1;
 
-    for (int i = Num; i >= 1; i--)
+    for (int i = N; i >= 1; i--)
     {
         Fact *= i;
     }
     return Fact;
 }
 
-int FactorialUsingWhileLoop(short Num)
+int FactorialUsingWhileLoop(short N)
 {
     short Fact = 1;
-    int i = Num;
+    int i = N;
 
     while (i >= 1)
     {
