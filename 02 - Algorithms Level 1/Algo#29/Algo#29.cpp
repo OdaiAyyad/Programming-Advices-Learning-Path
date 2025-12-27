@@ -55,7 +55,16 @@ int EvenNumbersSummationUsingDoWhileLoop(int N)
     short Sum = 0;
     int counter = 0;
 
-    cout << "Even numbers summation using Do While loop: ";
+    cout << "\nEven numbers summation using Do While loop: ";
+    do
+    {
+        counter++;
+        if (CheckOddEven(N) == enOddEven::Even)
+            Sum += counter;
+
+    } while (counter < N);
+
+    return Sum;
 }
 
 int main()
