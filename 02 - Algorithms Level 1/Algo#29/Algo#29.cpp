@@ -3,6 +3,16 @@
 #include <cmath>
 using namespace std;
 
+enum enOddEven { Odd = 1, Even = 2 };
+
+int ReadNumber() 
+{
+    int N;
+    cout << "Enter a number: "; cin >> N;
+
+    return N;
+}
+
 int EvenNumbersSummationForLoop(short Num)
 {
     short Sum = 0;
@@ -35,12 +45,9 @@ int EvenNumbersSummationWhileLoop(short Num)
 
 int main()
 {
-    short Num1, Num2;
+    int N = ReadNumber();
 
-    cout << "Enter a number: "; cin >> Num1;
     cout << EvenNumbersSummationForLoop(Num1) << endl << endl;
-
-    cout << "Enter a number: "; cin >> Num2;
     cout << EvenNumbersSummationWhileLoop(Num2) << endl;
 
     return 0;
