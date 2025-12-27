@@ -27,7 +27,7 @@ int FactorialUsingWhileLoop(short N)
     short Fact = 1;
     int i = N;
 
-    while (i >= 1)
+    while (i > 1)
     {
         Fact *= i;
         i--;
@@ -37,7 +37,16 @@ int FactorialUsingWhileLoop(short N)
 
 int FactorialUsingDoWhileLoop(short N)
 {
+    short Fact = 1;
+    int i = N;
 
+    do
+    {
+        Fact *= i;
+        i--;
+    } while (i > 1);
+
+    return Fact;
 }
 
 int main()
