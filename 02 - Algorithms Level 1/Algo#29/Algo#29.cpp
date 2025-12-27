@@ -50,6 +50,14 @@ int EvenNumbersSummationUsingWhileLoop(int N)
     return Sum;
 }
 
+int EvenNumbersSummationUsingDoWhileLoop(int N)
+{
+    short Sum = 0;
+    int counter = 0;
+
+    cout << "Even numbers summation using Do While loop: ";
+}
+
 int main()
 {
     int N = ReadNumber();
