@@ -34,12 +34,12 @@ int EvenNumbersSummationUsingForLoop(int N)
     return Sum;
 }
 
-int EvenNumbersSummationUsingWhileLoop(short Num)
+int EvenNumbersSummationUsingWhileLoop(int N)
 {
     short Sum = 0;
     int counter = 0;
 
-    while (counter <= Num)
+    while (counter <= N)
     {
         if (i % 2 == 0)
         {
