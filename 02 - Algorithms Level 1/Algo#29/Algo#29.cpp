@@ -40,10 +40,12 @@ int EvenNumbersSummationUsingWhileLoop(int N)
     int counter = 0;
 
     cout << "\nEven numbers summation using While loop: ";
-    while (counter <= N)
+    while (counter < N)
     {
         counter++;
-        Sum += counter;
+        if (CheckOddEven(counter) == enOddEven::Even)
+            Sum += counter;
+
     }
     return Sum;
 }
