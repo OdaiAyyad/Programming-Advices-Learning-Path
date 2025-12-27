@@ -10,15 +10,19 @@ int ReadNumber()
     return N;
 }
 
+void PowerOf2_3_4(int N)
+{
+    int a, b, c;
 
+    a = N * N;
+    b = N * N * N;
+    c = N * N * N * N;
+
+    cout << a << " " << b << " " << c << endl;
+}
 
 int main()
 {
-
-
-    cout << N << " ^ 2" << " = " << round(Power_2(N)) << endl;
-    cout << N << " ^ 3" << " = " << round(Power_3(N)) << endl;
-    cout << N << " ^ 4" << " = " << round(Power_4(N)) << endl;
 
     return 0;
 }
