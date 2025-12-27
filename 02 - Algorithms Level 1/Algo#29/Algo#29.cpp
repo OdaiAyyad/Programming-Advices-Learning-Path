@@ -41,11 +41,8 @@ int EvenNumbersSummationUsingWhileLoop(int N)
 
     while (counter <= N)
     {
-        if (i % 2 == 0)
-        {
-            Sum += i;
-        }
-        i++;
+        counter++;
+        Sum += counter;
     }
     return Sum;
 }
