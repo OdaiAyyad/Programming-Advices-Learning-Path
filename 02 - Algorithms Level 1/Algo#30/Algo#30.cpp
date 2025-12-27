@@ -26,6 +26,7 @@ int FactorialWhileLoop(short Num)
 {
     short Fact = 1;
     int i = Num;
+
     while (i >= 1)
     {
         Fact *= i;
@@ -33,6 +34,8 @@ int FactorialWhileLoop(short Num)
     }
     return Fact;
 }
+
+int 
 
 int main()
 {
