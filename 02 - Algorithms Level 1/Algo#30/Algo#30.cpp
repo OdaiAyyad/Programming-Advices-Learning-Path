@@ -35,7 +35,7 @@ int FactorialWhileLoop(short Num)
     return Fact;
 }
 
-int 
+int FactorialWhileLoop
 
 int main()
 {
