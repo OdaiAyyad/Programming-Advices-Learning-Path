@@ -3,9 +3,16 @@
 #include <cmath>
 using namespace std;
 
-void ReadGrade(short& Grade)
+short ReadNumberInRange(short From, short To)
 {
-    cout << "Enter your grade: "; cin >> Grade;
+    short Grade;
+    do
+    {
+        cout << "Enter a grade between 0 and 100: "; cin >> Grade;
+
+    } while (Grade < From || Grade > To);
+
+    return Grade;
 }
 
 char GetGradeLetter(short Grade)
