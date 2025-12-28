@@ -3,32 +3,44 @@
 #include <cmath>
 using namespace std;
 
-void ReadPIN(string& PIN)
+string ReadPINCode()
 {
-    cout << "Enter your PIN: "; cin >> PIN;
+    string PINCode;
+    cout << "Enter your PIN code: "; cin >> PINCode;
+
+    return PINCode;
+}
+
+bool Login()
+{
+    string PINCode;
+    short Counter = 3;
+    do
+    {
+        Counter--;
+        PINCode = ReadPINCode();
+        if (PINCode == "1234")
+            return 1;
+        else
+        {
+            system("color 4F"); // Turn screen into red
+            cout << "\nWrong PIN!\nYou have " << Counter << " more tries.\n";
+        }
+    } while (Counter >= 1 && PINCode != "1234");
+
+    return 0;
 }
 
 int main()
 {
-    string PIN;
-    short Balance = 7500;
-    short Counter = 0;
-
-    ReadPIN(PIN);
-
-    if (PIN == "1234")
+    if (Login())
     {
-        cout << "Your balance is: " << Balance << endl;
+        system("color 2F"); // Turn screen into green
+        cout << "\nYour balance is: " << 7500 << endl;
     }
     else
     {
-        while (Counter != 3)
-        {
-            Counter++;
-            cout << "Wrong PIN.\n";
-            ReadPIN(PIN);
-        }
-        cout << "Card is locked!\n";
+        cout << "Card is locked!\nCall the bank for help.";
     }
 
     return 0;
