@@ -19,7 +19,7 @@ int main()
     float TotalPennies = Pennies + 5 * Nickels + 10 * Dimes + 25 * Quarters + 100 * Dollars;
 
     cout << "Total Pennies: " << TotalPennies << endl;
-    cout << "Total Dollars: " << TotalPennies / 100 << endl
+    cout << "Total Dollars: " << TotalPennies / 100 << end
 
     return 0;
 }
