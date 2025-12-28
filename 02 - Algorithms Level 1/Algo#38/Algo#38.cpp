@@ -20,18 +20,19 @@ int ReadPositiveNumber(string Message)
 
 enPrime_NotPrime CheckPrime_NotPrime(int Number)
 {
-    for (int i = 2; i <= Number; i++)
+    int M = round(Number / 2);
+
+    for (int i = 2; i <= M; i++)
     {
         if (Number % i == 0)
             return enPrime_NotPrime::NotPrime;
-        else
-            return enPrime_NotPrime::Prime;
     }
+    return enPrime_NotPrime::Prime;
 }
 
-void PrintResults(enPrime_NotPrime P)
+void PrintResults(int Number)
 {
-    if (enPrime_NotPrime(P) == enPrime_NotPrime::Prime)
+    if (enPrime_NotPrime(Number) == enPrime_NotPrime::Prime)
         cout << "\nPrime Number.\n";
     else
         cout << "\nNot a Prime Number!!\n";
