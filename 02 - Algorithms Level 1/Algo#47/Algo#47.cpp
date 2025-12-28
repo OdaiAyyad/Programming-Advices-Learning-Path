@@ -16,6 +16,8 @@ float ReadPositiveNumber(string Message)
 float TotalMonths(float LoanAmount, float MonthlyPayment)
 {
     float TotalMonths = LoanAmount / MonthlyPayment;
+
+    return TotalMonths;
 }
 
 int main()
