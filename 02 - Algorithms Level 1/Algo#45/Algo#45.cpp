@@ -3,14 +3,26 @@
 #include <cmath>
 using namespace std;
 
-enum MonthOfYear { Jan = 1, Feb = 2, Mar = 3, Apr = 4, May = 5, Jun = 6, Jul = 7, Aug = 8, Sep = 9, Oct = 10, Nov = 11, Dec = 12 };
+enum enMonthOfYear { Jan = 1, Feb = 2, Mar = 3, Apr = 4, May = 5, Jun = 6, Jul = 7, Aug = 8, Sep = 9, Oct = 10, Nov = 11, Dec = 12 };
 
 short ReadNumberInRange(string Message, short From, short To)
 {
+    int Number = 0;
+    do
+    {
+        cout << Message; cin >> Number;
 
+    } while (Number < 1 || Number > 12);
+
+    return Number;
 }
 
-string MonthText(short Month)
+enMonthOfYear GetMonthOfYear()
+{
+    return enMonthOfYear(ReadNumberInRange("Enter a month number (Jan = 1...Dec = 12): ", 1, 12));
+}
+
+string PrintMonthOfYear(enMonthOfYear Month)
 {
     switch (Month)
     {
