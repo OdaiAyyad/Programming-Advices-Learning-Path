@@ -25,9 +25,10 @@ int main()
     float TotalBill = ReadPositiveNumber("Enter your total bill: ");
     float CashPaid = ReadPositiveNumber("Enter the paid cash: ");
 
+    cout << "\n";
     cout << "Total Bill = " << TotalBill << endl;
     cout << "Cash Paid = " << CashPaid << endl;
-    cout << "*********\n";
+    cout << "\n*****************\n";
 
     cout << "Remainder = " << CalculateRemainder(TotalBill, CashPaid) << endl;
 
