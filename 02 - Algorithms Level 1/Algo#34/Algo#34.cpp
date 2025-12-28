@@ -11,7 +11,21 @@ float ReadTotalSales()
     return TotalSales;
 }
 
-float Commission(float TotalSales)
+float GetCommissionPercentage(float TotalSales)
+{
+    if (TotalSales >= 1000000)
+        return 0.01;
+    else if (TotalSales >= 500000)
+        return 0.02;
+    else if (TotalSales >= 100000)
+        return 0.03;
+    else if (TotalSales >= 50000)
+        return 0.05;
+    else
+        return 0;
+}
+
+float CalculateTotalCommission(float TotalSales)
 {
     if (TotalSales >= 1000000)
         return (TotalSales * 0.01);
@@ -27,10 +41,10 @@ float Commission(float TotalSales)
 
 int main()
 {
-    float TotalSales;
+    float TotalSales = ReadTotalSales();
 
-    
-    cout << "\nYour Commission: " << Commission(ReadTotalSales()) << endl;
+    cout << "\nYour commission percentage is: " << GetCommissionPercentage(TotalSales) << endl;
+    cout << "\nYour total commission is: " << CalculateTotalCommission(TotalSales) << endl;
 
     return 0;
 }
