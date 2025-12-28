@@ -1,6 +1,18 @@
 #include <iostream>
 using namespace std;
 
+float ReadPositiveNumber(string Message)
+{
+    float Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
 int main()
 {
     int LoanAmount, Months;
@@ -10,7 +22,7 @@ int main()
 
     int MonthlyPyment = LoanAmount / Months;
 
-    cout << "\nYour monthly payment will be " << MonthlyPyment << endl;
+    cout << "\nYour monthly payment will be " << MonthlyPyment << endl
 
     return 0;
 }
