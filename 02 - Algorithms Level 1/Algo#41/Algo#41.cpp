@@ -15,9 +15,24 @@ float ReadPositiveNumber(string Message)
     return Number;
 }
 
+float HoursToDays(float NumberOfHours)
+{
+    return NumberOfHours * 24;
+}
+
+float HoursToWeeks(float NumbersOfHours)
+{
+    return NumbersOfHours * 24 * 7;
+}
+
+float DaysToWeeks(float NumberOfDays)
+{
+    return NumberOfDays * 7;
+}
+
 int main()
 {
-
+    float NumberOfHours = ReadPositiveNumber("Enter the number of hours: ");
 
     return 0;
 }
