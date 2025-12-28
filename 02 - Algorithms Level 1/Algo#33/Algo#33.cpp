@@ -3,37 +3,25 @@
 #include <cmath>
 using namespace std;
 
-void ReadGrade(short &Grade)
+void ReadGrade(short& Grade)
 {
     cout << "Enter your grade: "; cin >> Grade;
 }
 
-void GradeRank(short Grade)
+char GetGradeLetter(short Grade)
 {
     if (Grade >= 90 && Grade <= 100)
-    {
-        cout << "A\n";
-    }
+        return 'A';
     else if (Grade >= 80)
-    {
-        cout << "B\n";
-    }
+        return 'B';
     else if (Grade >= 70)
-    {
-        cout << "C\n";
-    }
+        return 'C';
     else if (Grade >= 60)
-    {
-        cout << "D\n";
-    }
+        return 'D';
     else if (Grade >= 50)
-    {
-        cout << "E\n";
-    }
+        return 'E';
     else
-    {
-        cout << "F\n";
-    }
+        return 'F';
 }
 
 int main()
