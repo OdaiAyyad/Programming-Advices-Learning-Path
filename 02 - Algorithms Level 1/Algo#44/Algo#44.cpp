@@ -7,12 +7,12 @@ enum enDayOfWeek { Sat = 1, Sun = 2, Mon = 3, Tue = 4, Wed = 5, Thu = 6, Fri = 7
 
 short ReadNumberInRange(string Message, short From, short To)
 {
-    short Number;
+    short Number = 0;
     do
     {
         cout << Message; cin >> Number;
 
-    } while (Number < 1 || Number > 7);
+    } while (Number < From || Number > To);
 
     return Number;
 }
@@ -26,39 +26,28 @@ string GetDayOfWeek(enDayOfWeek Day)
 {
     switch (Day)
     {
-    case 1:
-        return "Sunday";
-        break;
-    case 2:
-        return "Monday";
-        break;
-    case 3:
-        return "Tuesday";
-        break;
-    case 4:
-        return "Wednesday";
-        break;
-    case 5:
-        return "Thursday";
-        break;
-    case 6:
-        return "Friday";
-        break;
-    case 7:
+    case enDayOfWeek::Sat:
         return "Satarday";
-        break;
+    case enDayOfWeek::Sun:
+        return "Sunday";
+    case enDayOfWeek::Mon:
+        return "Monday";
+    case enDayOfWeek::Tue:
+        return "Tuesday";
+    case enDayOfWeek::Wed:
+        return "Wednesday";
+    case enDayOfWeek::Thu:
+        return "Thursday";
+    case enDayOfWeek::Fri:
+        return "Friday";
     default:
-        return "Not a Day!";
+        return "Not a Valid Day!";
     }   
 }
 
 int main()
 {
-    short Day;
-
-    ReadDay(Day);
-
-    cout << DayText(Day);
+    cout << GetDayOfWeek(ReadDayOfWeek());
 
     return 0;
 }
