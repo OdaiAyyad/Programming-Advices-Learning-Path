@@ -18,9 +18,17 @@ int ReadPower()
     return M;
 }
 
-int Power(int N, int M)
+int PowerOfM(int N, int M)
 {
-    return pow(N, M);
+    if (M == 0)
+        return 1;
+
+    int P = 1;
+    for (int i = 1; i <= M; i++)
+    {
+        P *= N;
+    }
+    return P;
 }
 
 int main()
@@ -28,7 +36,7 @@ int main()
     int N = ReadNumber();
     int M = ReadPower();
 
-    cout << N << " ^ " << M << " = " << Power(N, M) << endl;
+    cout << N << " ^ " << M << " = " << PowerOfM(N, M) << endl;
 
     return 0;
 }
