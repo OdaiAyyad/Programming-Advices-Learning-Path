@@ -10,6 +10,18 @@ void ReadInfo(float &Num1, float &Num2, char &Operation)
     cout << "Enter the operation you want: "; cin >> Operation;
 }
 
+float ReadNumber(string Message)
+{
+    float Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
 float Calculator(float Num1, float Num2, char Operation)
 {
     switch (Operation)
@@ -34,11 +46,13 @@ float Calculator(float Num1, float Num2, char Operation)
 int main()
 {
     float Num1, Num2;
-    char Operation;
+    
+    float Number1 = ReadNumber("Enter the first number: ");
+    float Number2 = ReadNumber("Enter the second number: ");
 
     ReadInfo(Num1, Num2, Operation);
 
-    cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl;
+    cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl
 
     return 0;
 }
