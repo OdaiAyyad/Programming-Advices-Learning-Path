@@ -26,44 +26,32 @@ string PrintMonthOfYear(enMonthOfYear Month)
 {
     switch (Month)
     {
-    case 1:
+    case enMonthOfYear::Jan:
         return "January";
-        break;
-    case 2:
+    case enMonthOfYear::Feb:
         return "February";
-        break;
-    case 3:
+    case enMonthOfYear::Mar:
         return "March";
-        break;
-    case 4:
+    case enMonthOfYear::Apr:
         return "April";
-        break;
-    case 5:
+    case enMonthOfYear::May:
         return "May";
-        break;
-    case 6:
+    case enMonthOfYear::Jun:
         return "June";
-        break;
-    case 7:
+    case enMonthOfYear::Jul:
         return "July";
-        break;
-    case 8:
+    case enMonthOfYear::Aug:
         return "August";
-        break;
-    case 9:
+    case enMonthOfYear::Sep:
         return "September";
-        break;
-    case 10:
+    case enMonthOfYear::Oct:
         return "October";
-        break;
-    case 11:
+    case enMonthOfYear::Nov:
         return "November";
-        break;
-    case 12:
+    case enMonthOfYear::Dec:
         return "December";
-        break;
     default:
-        return "Not a Month!";
+        return "Not a Valid Month!";
     }
 }
 
