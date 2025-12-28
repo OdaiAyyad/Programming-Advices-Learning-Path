@@ -39,7 +39,7 @@ stTaskDuration SecondsToTaskDuration(int TotalSeconds)
 
 void PrintTaskDurationDetails(stTaskDuration TaskDuration)
 {
-    cout << TaskDuration.NumberOfDays << ":" << TaskDuration.NumberOfHours << ":" << TaskDuration.NumberOfMinutes << ":" << TaskDuration.NumberOfSeconds;
+    cout << "\nTask Duration Details: " << TaskDuration.NumberOfDays << ":" << TaskDuration.NumberOfHours << ":" << TaskDuration.NumberOfMinutes << ":" << TaskDuration.NumberOfSeconds << endl;
 }
 
 int main()
