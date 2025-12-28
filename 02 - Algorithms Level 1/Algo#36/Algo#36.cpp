@@ -45,7 +45,7 @@ int main()
 
     enOperationType OT = ReadOperationType();
 
-    cout << Number1 << " " << OT << " " << Number2 << " = " << Calculator(Number1, Number2, OT) << endl
+    cout << "\n" << Number1 << " " << char(OT) << " " << Number2 << " = " << Calculator(Number1, Number2, OT) << endl;
 
     return 0;
 }
