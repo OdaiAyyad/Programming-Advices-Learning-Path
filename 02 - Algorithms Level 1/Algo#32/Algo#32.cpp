@@ -10,6 +10,14 @@ int ReadNumber()
     return N;
 }
 
+int ReadPower()
+{
+    int M;
+    cout << "Enter the Power: "; cin >> M;
+
+    return M;
+}
+
 int Power(int N, int M)
 {
     return pow(N, M);
@@ -17,11 +25,6 @@ int Power(int N, int M)
 
 int main()
 {
-    int N, M;
-
-
-    cout << "Enter the Power: "; cin >> M;
-
     cout << N << " ^ " << M << " = " << round(Power(N, M)) << endl
 
     return 0;
