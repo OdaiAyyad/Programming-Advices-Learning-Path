@@ -57,11 +57,7 @@ string PrintMonthOfYear(enMonthOfYear Month)
 
 int main()
 {
-    short Day;
-
-    ReadMonth(Day);
-
-    cout << MonthText(Day) << endl
+    cout << PrintMonthOfYear(GetMonthOfYear()) << endl;
 
     return 0;
 }
