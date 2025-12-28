@@ -36,7 +36,7 @@ int main()
     int N = ReadNumber();
     int M = ReadPower();
 
-    cout << N << " ^ " << M << " = " << PowerOfM(N, M) << endl;
+    cout << "\n" << N << " ^ " << M << " = " << PowerOfM(N, M) << endl;
 
     return 0;
 }
