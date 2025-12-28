@@ -5,10 +5,15 @@ using namespace std;
 
 enum enPrime_NotPrime { Prime = 1, NotPrime = 2 };
 
-int ReadNumber(string Message)
+int ReadPositiveNumber(string Message)
 {
     int Number;
-    cout << Message; cin >> Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+    
 
     return Number;
 }
@@ -34,7 +39,7 @@ void PrintResults(enPrime_NotPrime P)
 
 int main()
 {
-    PrintResults(CheckPrime_NotPrime(ReadNumber("Enter a number: ")));
+    PrintResults(CheckPrime_NotPrime(ReadPositiveNumber("Enter a positive number: ")));
 
     return 0;
 }
