@@ -9,12 +9,12 @@ struct stTaskDuration
 
 int ReadPositiveNumber(string Message)
 {
-    int Number;
+    int Number = 0;
     do
     {
         cout << Message; cin >> Number;
 
-    } while (Number < 0);
+    } while (Number <= 0);
 
     return Number;
 }
@@ -31,16 +31,16 @@ stTaskDuration ReadTaskDuration()
     return TaskDuration;
 }
 
-int TotalTaskDurationInSeconds(int Days, int Hours, int Minutes, int Seconds)
+int TotalTaskDurationInSeconds(stTaskDuration TaskDuration)
 {
-    int TotalSeconds;
+    int DurationInSeconds = 0;
 
-    Minutes = Minutes * 60;
-    Hours = Hours * 60 * 60;
-    Days = Days * 60 * 60 * 24;
-    TotalSeconds = Days + Hours + Minutes + Seconds;
+    DurationInSeconds = TaskDuration.NumberOfDays * 24 * 60 * 60;
+    DurationInSeconds += TaskDuration.NumberOfHours * 60 * 60;
+    DurationInSeconds += TaskDuration.NumberOfMinutes * 60;
+    DurationInSeconds += TaskDuration.NumberOfSeconds;
 
-    return TotalSeconds;
+    return DurationInSeconds;
 }
 
 int main()
