@@ -3,23 +3,22 @@
 #include <cmath>
 using namespace std;
 
-void ReadInfo(float &Num1, float &Num2, char &Operation)
-{
-    cout << "Enter the first number: "; cin >> Num1;
-    cout << "Enter the second number: "; cin >> Num2;
-    cout << "Enter the operation you want: "; cin >> Operation;
-}
+enum enOperationType { Add = '+', Subtract = '-', Multiply = '*', Divide = '/' };
 
 float ReadNumber(string Message)
 {
-    float Number;
-    do
-    {
-        cout << Message; cin >> Number;
-
-    } while (Number < 0);
+    float Number = 0;
+    cout << Message; cin >> Number;
 
     return Number;
+}
+
+enOperationType ReadOperationTyp()
+{
+    char OT = '+';
+    cout << "Enter operation type( +, -, *, / ): "; cin >> OT;
+
+    return enOperationType(OT);
 }
 
 float Calculator(float Num1, float Num2, char Operation)
@@ -49,8 +48,6 @@ int main()
     
     float Number1 = ReadNumber("Enter the first number: ");
     float Number2 = ReadNumber("Enter the second number: ");
-
-    ReadInfo(Num1, Num2, Operation);
 
     cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl
 
