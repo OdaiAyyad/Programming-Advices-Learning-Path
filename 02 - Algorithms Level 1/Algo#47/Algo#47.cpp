@@ -25,7 +25,7 @@ int main()
     float LoanAmount = ReadPositiveNumber("Enter your loan amount: ");
     float MonthlyPyment = ReadPositiveNumber("Enter your monthly payment: ");
 
-    cout << "You need " << TotalMonths(LoanAmount, MonthlyPyment) << " months, to settle this loan.\n";
+    cout << "\nYou need (" << TotalMonths(LoanAmount, MonthlyPyment) << ") month(s), to settle this loan.\n";
 
     return 0;
 }
