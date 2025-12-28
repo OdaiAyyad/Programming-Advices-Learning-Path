@@ -28,7 +28,7 @@ int main()
     cout << "\n";
     cout << "Total Bill = " << TotalBill << endl;
     cout << "Cash Paid = " << CashPaid << endl;
-    cout << "\n*****************\n";
+    cout << "****************\n\n";
 
     cout << "Remainder = " << CalculateRemainder(TotalBill, CashPaid) << endl;
 
