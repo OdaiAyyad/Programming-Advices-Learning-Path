@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+struct stPiggyBankContent
+{
+    unsigned int Pennies, Nickels, Dimes, Quarters, Dollars;
+};
+
 int main()
 {
     unsigned int Pennies, Nickels, Dimes, Quarters, Dollars;
@@ -14,7 +19,7 @@ int main()
     float TotalPennies = Pennies + 5 * Nickels + 10 * Dimes + 25 * Quarters + 100 * Dollars;
 
     cout << "Total Pennies: " << TotalPennies << endl;
-    cout << "Total Dollars: " << TotalPennies / 100 << endl;
+    cout << "Total Dollars: " << TotalPennies / 100 << endl
 
     return 0;
 }
