@@ -3,9 +3,12 @@
 #include <cmath>
 using namespace std;
 
-void ReadTotalSales(float &TotalSales)
+float ReadTotalSales()
 {
+    float TotalSales;
     cout << "Enter your total sales: "; cin >> TotalSales;
+
+    return TotalSales;
 }
 
 float Commission(float TotalSales)
@@ -26,8 +29,8 @@ int main()
 {
     float TotalSales;
 
-    ReadTotalSales(TotalSales);
-    cout << "Your Commission: " << Commission(TotalSales) << endl;
+    
+    cout << "\nYour Commission: " << Commission(ReadTotalSales()) << endl;
 
     return 0;
 }
