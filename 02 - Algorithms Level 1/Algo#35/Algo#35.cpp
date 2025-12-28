@@ -3,7 +3,7 @@ using namespace std;
 
 struct stPiggyBankContent
 {
-    unsigned int Pennies, Nickels, Dimes, Quarters, Dollars;
+    int Pennies, Nickels, Dimes, Quarters, Dollars;
 };
 
 stPiggyBankContent ReadPiggyBankContent()
@@ -28,10 +28,10 @@ int CalculateTotalPennies(stPiggyBankContent Content)
 
 int main()
 {
-    int TotalPennies = CalculateTotalPennies(ReadPiggyBankContent());
+    float TotalPennies = CalculateTotalPennies(ReadPiggyBankContent());
 
     cout << "Total Pennies: " << TotalPennies << endl;
-    cout << "Total Dollars: " << float(TotalPennies / 100) << endl;
+    cout << "Total Dollars: " << TotalPennies / 100 << endl;
 
     return 0;
 }
