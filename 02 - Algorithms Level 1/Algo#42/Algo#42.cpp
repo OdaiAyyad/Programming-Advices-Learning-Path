@@ -2,7 +2,36 @@
 #include <cmath>
 using namespace std;
 
-int TotalSeconds(int Days, int Hours, int Minutes, int Seconds)
+struct stTaskDuration
+{
+    int Days, Hours, Minutes, Seconds;
+};
+
+int ReadPositiveNumber(string Message)
+{
+    int Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
+stTaskDuration ReadTaskDuration()
+{
+    stTaskDuration TD;
+
+    cout << "Enter number of days: "; cin >> TD.Days;
+    cout << "Enter number of hours: "; cin >> TD.Hours;
+    cout << "Enter number of Minutes: "; cin >> TD.Minutes;
+    cout << "Enter number of seconds: "; cin >> TD.Seconds;
+
+    return TD;
+}
+
+int TotalTaskDurationInSeconds(int Days, int Hours, int Minutes, int Seconds)
 {
     int TotalSeconds;
 
@@ -16,14 +45,7 @@ int TotalSeconds(int Days, int Hours, int Minutes, int Seconds)
 
 int main()
 {
-    int Days, Hours, Minutes, Seconds;
-
-    cout << "Enter number of days: "; cin >> Days;
-    cout << "Enter number of hours: "; cin >> Hours;
-    cout << "Enter number of Minutes: "; cin >> Minutes;
-    cout << "Enter number of seconds: "; cin >> Seconds;
-
-    cout << "Your task total time duration in seconds = " << round(TotalSeconds(Days, Hours, Minutes, Seconds)) << endl;
+    cout << "Total Task Duration in Seconds = " << TotalTaskDurationInSeconds(ReadTaskDuration()) << endl;
 
     return 0;
 }
