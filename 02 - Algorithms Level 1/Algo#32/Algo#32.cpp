@@ -25,7 +25,10 @@ int Power(int N, int M)
 
 int main()
 {
-    cout << N << " ^ " << M << " = " << round(Power(N, M)) << endl
+    int N = ReadNumber();
+    int M = ReadPower();
+
+    cout << N << " ^ " << M << " = " << Power(N, M) << endl;
 
     return 0;
 }
