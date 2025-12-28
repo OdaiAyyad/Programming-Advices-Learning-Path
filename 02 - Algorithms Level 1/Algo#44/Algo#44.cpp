@@ -3,12 +3,26 @@
 #include <cmath>
 using namespace std;
 
-void ReadDay(short& Day)
+enum enDayOfWeek { Sat = 1, Sun = 2, Mon = 3, Tue = 4, Wed = 5, Thu = 6, Fri = 7 };
+
+short ReadNumberInRange(string Message, short From, short To)
 {
-    cout << "Enter the day number: "; cin >> Day;
+    short Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 1 || Number > 7);
+
+    return Number;
 }
 
-string DayText(short Day)
+enDayOfWeek ReadDayOfWeek()
+{
+    return enDayOfWeek(ReadNumberInRange("Enter a day number (Sat = 1...Fri = 7): ", 1, 7));
+}
+
+string GetDayOfWeek(enDayOfWeek Day)
 {
     switch (Day)
     {
