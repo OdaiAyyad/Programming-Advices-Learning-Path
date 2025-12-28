@@ -19,16 +19,17 @@ stPiggyBankContent ReadPiggyBankContent()
     return Content;
 }
 
+int CalculateTotalPennies(stPiggyBankContent Content)
+{
+    int TotalPennies = Content.Pennies + 5 * Content.Nickels + 10 * Content.Dimes + 25 * Content.Quarters + 100 * Content.Dollars;
+}
+
 int main()
 {
-    unsigned int Pennies, Nickels, Dimes, Quarters, Dollars;
-
-
-
-    float TotalPennies = Pennies + 5 * Nickels + 10 * Dimes + 25 * Quarters + 100 * Dollars;
+    int TotalPennies = CalculateTotalPennies(ReadPiggyBankContent());
 
     cout << "Total Pennies: " << TotalPennies << endl;
-    cout << "Total Dollars: " << TotalPennies / 100 << end
+    cout << "Total Dollars: " << float(TotalPennies / 100) << endl;
 
     return 0;
 }
