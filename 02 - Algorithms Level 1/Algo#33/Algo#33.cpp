@@ -33,7 +33,7 @@ char GetGradeLetter(short Grade)
 
 int main()
 {
-    cout << "Your grade letter is: " << GetGradeLetter(ReadNumberInRange(0, 100)) << endl;
+    cout << "\nYour grade letter is: " << GetGradeLetter(ReadNumberInRange(0, 100)) << endl;
 
     return 0;
 }
