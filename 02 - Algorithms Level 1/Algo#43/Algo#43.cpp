@@ -33,6 +33,8 @@ stTaskDuration SecondsToTaskDuration(int TotalSeconds)
     TaskDuration.NumberOfMinutes = floor(Remainder / SecondsPerMinute);
     Remainder = Remainder % SecondsPerMinute;
     TaskDuration.NumberOfSeconds = Remainder;
+
+    return TaskDuration;
 }
 
 void PrintTaskDurationDetails(stTaskDuration TaskDuration)
