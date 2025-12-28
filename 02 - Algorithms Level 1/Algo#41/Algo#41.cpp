@@ -22,7 +22,7 @@ float HoursToDays(float NumberOfHours)
 
 float HoursToWeeks(float NumbersOfHours)
 {
-    return HoursToDays(NumbersOfHours) / 7;
+    return NumbersOfHours / 24 / 7;
 }
 
 float DaysToWeeks(float NumberOfDays)
