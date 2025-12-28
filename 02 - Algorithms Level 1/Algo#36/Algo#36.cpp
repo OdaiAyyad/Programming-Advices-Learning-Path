@@ -27,31 +27,25 @@ float Calculator(float Number1, float Number2, enOperationType OperationType)
     {
     case enOperationType::Add:
         return Number1 + Number2;
-        break;
     case enOperationType::Subtract:
         return Number1 - Number2;
-        break;
     case enOperationType::Multiply:
         return Number1 * Number2;
-        break;
     case enOperationType::Divide:
         return Number1 / Number2;
-        break;
     default:
-        cout << "Invalid Operation Type!";
+        return Number1 + Number2;
     }
 }
 
 int main()
 {
-    float Num1, Num2;
-    
     float Number1 = ReadNumber("Enter the first number: ");
     float Number2 = ReadNumber("Enter the second number: ");
 
     enOperationType OT = ReadOperationType();
 
-    cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl
+    cout << Number1 << " " << OT << " " << Number2 << " = " << Calculator(Number1, Number2, OT) << endl
 
     return 0;
 }
