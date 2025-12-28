@@ -47,7 +47,7 @@ string GetDayOfWeek(enDayOfWeek Day)
 
 int main()
 {
-    cout << GetDayOfWeek(ReadDayOfWeek());
+    cout << GetDayOfWeek(ReadDayOfWeek()) << endl;
 
     return 0;
 }
