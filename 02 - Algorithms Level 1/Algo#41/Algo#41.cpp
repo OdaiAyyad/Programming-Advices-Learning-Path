@@ -17,12 +17,12 @@ float ReadPositiveNumber(string Message)
 
 float HoursToDays(float NumberOfHours)
 {
-    return NumberOfHours * 24;
+    return NumberOfHours / 24;
 }
 
 float HoursToWeeks(float NumbersOfHours)
 {
-    return NumbersOfHours * 24 * 7;
+    return HoursToDays(NumbersOfHours) / 7;
 }
 
 float DaysToWeeks(float NumberOfDays)
@@ -33,6 +33,13 @@ float DaysToWeeks(float NumberOfDays)
 int main()
 {
     float NumberOfHours = ReadPositiveNumber("Enter the number of hours: ");
+    float NumberOfDays = HoursToDays(NumberOfHours);
+    float NumberOfWeeks = DaysToWeeks(NumberOfDays);
+
+    cout << endl;
+    cout << "Total Hours = " << NumberOfHours << endl;
+    cout << "Total Days = " << NumberOfDays << endl;
+    cout << "Total Weeks = " << HoursToWeeks(NumberOfHours) << endl;
 
     return 0;
 }
