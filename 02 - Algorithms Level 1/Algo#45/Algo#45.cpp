@@ -3,9 +3,11 @@
 #include <cmath>
 using namespace std;
 
-void ReadMonth(short& Month)
+enum MonthOfYear { Jan = 1, Feb = 2, Mar = 3, Apr = 4, May = 5, Jun = 6, Jul = 7, Aug = 8, Sep = 9, Oct = 10, Nov = 11, Dec = 12 };
+
+short ReadNumberInRange(string Message, short From, short To)
 {
-    cout << "Enter the month number: "; cin >> Month;
+
 }
 
 string MonthText(short Month)
@@ -59,7 +61,7 @@ int main()
 
     ReadMonth(Day);
 
-    cout << MonthText(Day) << endl;
+    cout << MonthText(Day) << endl
 
     return 0;
 }
