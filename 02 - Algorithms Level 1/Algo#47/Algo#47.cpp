@@ -13,16 +13,17 @@ float ReadPositiveNumber(string Message)
     return Number;
 }
 
+float TotalMonths(float LoanAmount, float MonthlyPayment)
+{
+    float TotalMonths = LoanAmount / MonthlyPayment;
+}
+
 int main()
 {
-    int LoanAmount, MonthlyPyment;
+    float LoanAmount = ReadPositiveNumber("Enter your loan amount: ");
+    float MonthlyPyment = ReadPositiveNumber("Enter your monthly payment: ");
 
-    cout << "Enter your loan amount: "; cin >> LoanAmount;
-    cout << "Enter your monthly payment: "; cin >> MonthlyPyment;
-
-    int Months = LoanAmount / MonthlyPyment;
-
-    cout << "You need " << Months << " months, to settle this loan.\n"
+    cout << "You need " << TotalMonths(LoanAmount, MonthlyPyment) << " months, to settle this loan.\n";
 
     return 0;
 }
