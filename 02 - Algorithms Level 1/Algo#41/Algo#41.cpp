@@ -3,6 +3,18 @@
 #include <cmath>
 using namespace std;
 
+float ReadPositiveNumber(string Message)
+{
+    float Number;
+    do
+    {
+        cout << Message; cin >> Number;
+    
+    } while (Number < 0);
+
+    return Number;
+}
+
 int main()
 {
 
