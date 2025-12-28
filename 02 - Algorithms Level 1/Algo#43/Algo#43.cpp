@@ -1,6 +1,23 @@
 #include <iostream>
 using namespace std;
 
+struct stTaskDuration
+{
+
+};
+
+int ReadPositiveNumber(string Message)
+{
+    int Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
 void TotalSecondsFun(int TotalSeconds)
 {
     int SecondsPerMinute = 60;
@@ -21,10 +38,9 @@ void TotalSecondsFun(int TotalSeconds)
 
 int main()
 {
-    int TotalSeconds, Remainder;
+    int TotalSeconds = ReadPositiveNumber("Enter Total Seconds: ");
 
-    cout << "Enter your task total time duration in seconds: "; cin >> TotalSeconds;
-
+    cout << "Enter your task total time duration in seconds: "; cin >> TotalSeconds
     TotalSecondsFun(TotalSeconds);
 
     return 0;
