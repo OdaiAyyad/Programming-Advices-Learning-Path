@@ -45,7 +45,7 @@ int TotalTaskDurationInSeconds(stTaskDuration TaskDuration)
 
 int main()
 {
-    cout << "Total Task Duration in Seconds = " << TotalTaskDurationInSeconds(ReadTaskDuration()) << endl;
+    cout << "\nTotal Task Duration in Seconds = " << TotalTaskDurationInSeconds(ReadTaskDuration()) << endl;
 
     return 0;
 }
