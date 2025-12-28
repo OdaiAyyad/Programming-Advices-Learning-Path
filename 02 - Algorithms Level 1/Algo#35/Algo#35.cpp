@@ -22,6 +22,8 @@ stPiggyBankContent ReadPiggyBankContent()
 int CalculateTotalPennies(stPiggyBankContent Content)
 {
     int TotalPennies = Content.Pennies + 5 * Content.Nickels + 10 * Content.Dimes + 25 * Content.Quarters + 100 * Content.Dollars;
+
+    return TotalPennies;
 }
 
 int main()
