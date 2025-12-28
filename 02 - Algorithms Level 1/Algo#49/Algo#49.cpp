@@ -34,7 +34,7 @@ int main()
     if (Login())
     {
         system("color 2F"); // Turn screen into green
-        cout << "Your balance is: " << 7500 << endl;
+        cout << "\nYour balance is: " << 7500 << endl;
     }
 
     return 0;
