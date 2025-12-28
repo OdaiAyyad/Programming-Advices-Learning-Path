@@ -4,7 +4,7 @@ using namespace std;
 
 struct stTaskDuration
 {
-    int Days, Hours, Minutes, Seconds;
+    int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds;
 };
 
 int ReadPositiveNumber(string Message)
@@ -21,14 +21,14 @@ int ReadPositiveNumber(string Message)
 
 stTaskDuration ReadTaskDuration()
 {
-    stTaskDuration TD;
+    stTaskDuration TaskDuration;
 
-    cout << "Enter number of days: "; cin >> TD.Days;
-    cout << "Enter number of hours: "; cin >> TD.Hours;
-    cout << "Enter number of Minutes: "; cin >> TD.Minutes;
-    cout << "Enter number of seconds: "; cin >> TD.Seconds;
+    TaskDuration.NumberOfDays = ReadPositiveNumber("Enter number of days: ");
+    TaskDuration.NumberOfHours = ReadPositiveNumber("Enter number of hours: ");
+    TaskDuration.NumberOfMinutes = ReadPositiveNumber("Enter number of Minutes: ");
+    TaskDuration.NumberOfSeconds = ReadPositiveNumber("Enter number of seconds: ");
 
-    return TD;
+    return TaskDuration;
 }
 
 int TotalTaskDurationInSeconds(int Days, int Hours, int Minutes, int Seconds)
