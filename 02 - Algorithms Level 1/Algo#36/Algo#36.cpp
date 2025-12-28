@@ -13,7 +13,7 @@ float ReadNumber(string Message)
     return Number;
 }
 
-enOperationType ReadOperationTyp()
+enOperationType ReadOperationType()
 {
     char OT = '+';
     cout << "Enter operation type( +, -, *, / ): "; cin >> OT;
@@ -21,24 +21,24 @@ enOperationType ReadOperationTyp()
     return enOperationType(OT);
 }
 
-float Calculator(float Num1, float Num2, char Operation)
+float Calculator(float Number1, float Number2, enOperationType OperationType)
 {
-    switch (Operation)
+    switch (OperationType)
     {
-    case '+':
-        return Num1 + Num2;
+    case enOperationType::Add:
+        return Number1 + Number2;
         break;
-    case '-':
-        return Num1 - Num2;
+    case enOperationType::Subtract:
+        return Number1 - Number2;
         break;
-    case '*':
-        return Num1 * Num2;
+    case enOperationType::Multiply:
+        return Number1 * Number2;
         break;
-    case '/':
-        return Num1 / Num2;
+    case enOperationType::Divide:
+        return Number1 / Number2;
         break;
     default:
-        cout << "Invalid Operation!";
+        cout << "Invalid Operation Type!";
     }
 }
 
@@ -48,6 +48,8 @@ int main()
     
     float Number1 = ReadNumber("Enter the first number: ");
     float Number2 = ReadNumber("Enter the second number: ");
+
+    enOperationType OT = ReadOperationType();
 
     cout << Num1 << " " << Operation << " " << Num2 << " = " << Calculator(Num1, Num2, Operation) << endl
 
