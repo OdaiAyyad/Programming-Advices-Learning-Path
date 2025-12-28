@@ -22,12 +22,10 @@ float MonthlyPayment(float LoanAmount, float NumberOfMonths)
 
 int main()
 {
-    int LoanAmount, Months;
+    float LoanAmount = ReadPositiveNumber("Enter your loan amount: ");
+    float NumberOfMonths = ReadPositiveNumber("How many months you need to settle this loan? ");
 
-    cout << "Enter your loan amount: "; cin >> LoanAmount;
-    cout << "How many months you need to settle this loan? "; cin >> Months;
-
-    cout << "\nYour monthly payment will be " << MonthlyPyment << endl
+    cout << "\nYour monthly payment will be " << MonthlyPayment(LoanAmount, NumberOfMonths) << endl;
 
     return 0;
 }
