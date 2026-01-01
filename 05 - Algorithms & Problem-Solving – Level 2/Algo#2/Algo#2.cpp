@@ -25,20 +25,24 @@ enPrime_NotPrime CheckPrime(short Number)
     {
         if (Number % i == 0)
             return enPrime_NotPrime::Not_Prime;
-        else
-            return enPrime_NotPrime::Prime;
     }
+    return enPrime_NotPrime::Prime;
 }
 
 void PrintPrimeNumbers(short Number)
 {
-    if (CheckPrime(Number) == enPrime_NotPrime::Prime)
-        cout << Number << endl;
+    cout << "\nPrime Numbers from 1 " << "to " << Number << ": \n";
+
+    for (int i = 1; i <= Number; i++)
+    {
+        if (CheckPrime(i) == enPrime_NotPrime::Prime)
+            cout << i << endl;
+    }
 }
 
 int main()
 {
-    PrintPrimeNumbers(CheckPrime(ReadNumber("Enter a Number: ")));
+    PrintPrimeNumbers(ReadNumber("Enter a Number: "));
 
     return 0;
 }
