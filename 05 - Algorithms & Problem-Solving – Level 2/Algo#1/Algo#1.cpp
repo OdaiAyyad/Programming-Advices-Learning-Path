@@ -15,8 +15,10 @@ void PrintTableHeader()
     cout << "\n\n-----------------------------------------------------------------------------------\n";
 }
 
-void PrintTable()
+void PrintMultiplicationTable()
 {
+    PrintTableHeader();
+
     for (int i = 1; i <= 10; i++)
     {
         cout << i << "\t| ";
@@ -30,8 +32,7 @@ void PrintTable()
 
 int main()
 {
-    PrintTableHeader();
-    PrintTable();
+    PrintMultiplicationTable();
 
     return 0;
 }
