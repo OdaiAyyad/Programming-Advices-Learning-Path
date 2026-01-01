@@ -18,10 +18,12 @@ short ReadPositiveNumber(string Message)
 void PrintReversedDigits(short Number)
 {
     short Remainder = 0;
-    for (int i = 0; i < ((to_string(Number)).length() - 1); i++)
+
+    while (Number > 0)
     {
         Remainder = Number % 10;
-        cout << Remainder;
+        Number = Number / 10;
+        cout << Remainder << endl;
     }
 }
 
