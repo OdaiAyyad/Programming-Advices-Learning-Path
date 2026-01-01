@@ -32,7 +32,7 @@ void PrintPerfectNumbers(short Number)
     for (int i = 1; i < Number; i++)
     {
         if (IsPerfectNumber(i))
-            cout << "\n" << i << " is a Perfect Number!\n";
+            cout << "\n" << i << endl;
     }
 }
 
