@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void PrintHeader()
+void PrintTableHeader()
 {
     cout << "\t\t\tMultiplication Table From 1 to 10\n\n";
     cout << "\t  ";
@@ -30,7 +30,7 @@ void PrintTable()
 
 int main()
 {
-    PrintHeader();
+    PrintTableHeader();
     PrintTable();
 
     return 0;
