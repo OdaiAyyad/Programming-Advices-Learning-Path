@@ -3,9 +3,9 @@
 #include <cmath>
 using namespace std;
 
-short ReadPositiveNumber(string Message)
+int ReadPositiveNumber(string Message)
 {
-    short Number = 0;
+    int Number = 0;
     do
     {
         cout << Message; cin >> Number;
@@ -15,9 +15,9 @@ short ReadPositiveNumber(string Message)
     return Number;
 }
 
-void PrintReversedDigits(short Number)
+void PrintReversedDigits(int Number)
 {
-    short Remainder = 0;
+    int Remainder = 0;
 
     while (Number > 0)
     {
