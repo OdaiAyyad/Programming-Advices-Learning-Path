@@ -15,10 +15,8 @@ void PrintHeader()
     cout << "\n\n-----------------------------------------------------------------------------------\n";
 }
 
-int main()
+void PrintTable()
 {
-    PrintHeader();
-
     for (int i = 1; i <= 10; i++)
     {
         cout << i << "\t| ";
@@ -28,6 +26,12 @@ int main()
         }
         cout << endl;
     }
+}
+
+int main()
+{
+    PrintHeader();
+    PrintTable();
 
     return 0;
 }
