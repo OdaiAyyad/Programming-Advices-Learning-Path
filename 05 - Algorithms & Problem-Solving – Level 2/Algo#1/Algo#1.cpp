@@ -12,12 +12,14 @@ void PrintHeader()
     {
         cout << i << "\t";
     }
+    cout << endl;
+    cout << "-----------------------------------------------------------------------------------\n";
 }
 
 int main()
 {
     PrintHeader();
-    cout << endl;
+
     for (int i = 1; i <= 10; i++)
     {
         cout << i << "\t| ";
