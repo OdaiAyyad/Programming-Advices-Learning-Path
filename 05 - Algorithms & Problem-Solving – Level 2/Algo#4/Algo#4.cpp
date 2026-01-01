@@ -1,20 +1,44 @@
-﻿// Algo#4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
 
-#include <iostream>
+short ReadPositiveNumber(string Message)
+{
+    short Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
+bool IsPerfectNumber(short Number)
+{
+    short Sum = 0;
+
+    for (int i = 1; i < Number; i++)
+    {
+        if (Number % i == 0)
+            Sum += i;
+    }
+    return(Sum == Number);
+}
+
+void PrintPerfectNumbers(short Number)
+{
+    for (int i = 1; i < Number; i++)
+    {
+        if (IsPerfectNumber(i))
+            cout << "\n" << i << " is a Perfect Number!\n";
+    }
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PrintPerfectNumbers(ReadPositiveNumber("Enter a Positive Number: "));
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
