@@ -32,6 +32,7 @@ void PrintNumberDigits(int Number)
 {
     int Remainder = 0;
 
+    cout << endl;
     while (Number > 0)
     {
         Remainder = Number % 10;
