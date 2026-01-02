@@ -1,4 +1,4 @@
-﻿﻿#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <cmath>
 using namespace std;
@@ -9,7 +9,7 @@ int ReadPositiveNumber(string Message)
     do
     {
         cout << Message; cin >> Number;
-
+        
     } while (Number < 0);
 
     return Number;
@@ -31,13 +31,25 @@ short DigitFrequency(int Number, short Digit)
     return Counter;
 }
 
+void PrintAllDigitsFrequency(int Number)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        short Digit_Frequency = 0;
+        Digit_Frequency = DigitFrequency(Number, i);
+
+        if (Digit_Frequency > 0)
+        {
+            cout << "\nDigit " << i << " Frequency is " << Digit_Frequency << " Time(s).";
+        }
+    }
+    cout << endl;
+}
+
 int main()
 {
     int Number = ReadPositiveNumber("Enter a Positive Number: ");
-    short Digit = ReadPositiveNumber("Enter a Digit: ");
-
-    cout << "\nDigit " << Digit << " Frequency is " << DigitFrequency(Number, Digit) << " Time(s).\n";
-
+    PrintAllDigitsFrequency(Number);
 
     return 0;
 }
