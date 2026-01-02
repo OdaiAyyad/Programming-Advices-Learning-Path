@@ -30,7 +30,7 @@ int DigitsSummation(int Number)
 
 void PrintSummation(int Sum)
 {
-    cout << "Sum of Digits = " << Sum << endl;
+    cout << "\nSum of Digits = " << Sum << endl;
 }
 
 int main()
