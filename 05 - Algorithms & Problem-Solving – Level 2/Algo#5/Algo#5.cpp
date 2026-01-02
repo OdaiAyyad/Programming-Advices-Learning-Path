@@ -23,7 +23,7 @@ void PrintReversedDigits(int Number)
     {
         Remainder = Number % 10;
         Number = Number / 10;
-        cout << Remainder << endl;
+        cout << Remainder << endl
     }
 }
 
