@@ -42,7 +42,7 @@ void PrintNumberDigits(int Number)
 
 int main()
 {
-    PrintNumberDigits(ReverseNumber(ReadPositiveNumber("Enter a Positive Number: ")));
+    PrintNumberDigits(ReverseNumber(ReadPositiveNumber("Enter a Positive Number: ")))
 
     return 0;
 }
