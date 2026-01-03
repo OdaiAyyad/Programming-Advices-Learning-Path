@@ -33,7 +33,7 @@ void PrintLetterPattern(int Number)
 
 int main()
 {
-    PrintLetterPattern(ReadPositiveNumber("Enter a Positive Number: "));
+    PrintLetterPattern(ReadPositiveNumber("Enter a Positive Number: "))
 
     return 0;
 }
