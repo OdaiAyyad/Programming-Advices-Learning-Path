@@ -19,9 +19,11 @@ void PrintInvertedLetterPattern(int Number)
 {
     Number += 65;
 
+    cout << endl;
+
     for (int i = Number - 1; i >= 65; i--)
     {
-        for (int j = 65; j <= i; j++)
+        for (int j = 65; j <= i - 1; j++)
         {
             cout << char(i);
         }
