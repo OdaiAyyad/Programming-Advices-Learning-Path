@@ -29,7 +29,7 @@ void PrintInvertedNumberPattern(int Number)
 
 int main()
 {
-    PrintInvertedNumberPattern(ReadPositiveNumber("Enter a Positive Number: "))
+    PrintInvertedNumberPattern(ReadPositiveNumber("Enter a Positive Number: "));
 
     return 0;
 }
