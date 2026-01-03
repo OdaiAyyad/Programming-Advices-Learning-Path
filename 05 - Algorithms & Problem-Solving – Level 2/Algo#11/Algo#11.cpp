@@ -25,7 +25,7 @@ int ReverseNumber(int Number)
         Number = Number / 10;
         Number2 = Number2 * 10 + Remainder;
     }
-    return Number;
+    return Number2;
 }
 
 bool IsPalindromeNumber(int Number)
@@ -35,7 +35,10 @@ bool IsPalindromeNumber(int Number)
 
 int main()
 {
-    IsPalindromeNumber(ReadPositiveNumber("Enter a Positive Number: "));
+    if (IsPalindromeNumber(ReadPositiveNumber("Enter a Positive Number: ")))
+        cout << "\nYES, it is a Palinrome Number!\n";
+    else
+        cout << "\nNO, it is NOT a Palinrome Number!\n";
 
     return 0;
 }
