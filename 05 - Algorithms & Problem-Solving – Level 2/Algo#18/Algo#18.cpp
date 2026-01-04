@@ -3,23 +3,23 @@
 #include <cmath>
 using namespace std;
 
-string ReadName()
+string ReadText()
 {
-    string Name = "";
+    string Text = "";
 
-    cout << "Enter your Name: "; cin >> Name;
+    cout << "Enter Text: "; cin >> Text;
 
-    return Name;
+    return Text;
 }
 
-string Encryption(string Name)
+string Encryption(string Text, short EncryptionKey)
 {
-    for (int i = 0; i <= Name.length(); i++)
+    for (int i = 0; i <= Text.length(); i++)
     {
-        Name[i] += 2;
+        Text[i] += EncryptionKey;
     }
     
-    return Name;
+    return Text;
 }
 
 string Decryption(string EncryptedName)
@@ -34,10 +34,12 @@ string Decryption(string EncryptedName)
 
 int main()
 {
-    string Name = ReadName();
-    cout << "\nName Before Encryption: " << Name << endl;
-    cout << "Name After Encryption: " << Encryption(Name) << endl;
-    cout << "Name After Decryption: " << Decryption(Encryption(Name)) << endl;
+    const short EncryptionKey = 2;
+
+    string Text = ReadText();
+    cout << "\nText Before Encryption: " << Text << endl;
+    cout << "Text After Encryption: " << Encryption(Text) << endl;
+    cout << "Text After Decryption: " << Decryption(Encryption(Text)) << endl;
 
     return 0;
 }
