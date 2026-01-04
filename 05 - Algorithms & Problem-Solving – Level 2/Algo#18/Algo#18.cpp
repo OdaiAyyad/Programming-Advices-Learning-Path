@@ -37,9 +37,12 @@ int main()
     const short EncryptionKey = 2;
 
     string Text = ReadText();
+    string TextAfterEncryption = Encryption(Text, EncryptionKey);
+    string TextAfterDecryption = Decryption(TextAfterEncryption, EncryptionKey);
+
     cout << "\nText Before Encryption: " << Text << endl;
-    cout << "Text After Encryption: " << Encryption(Text, EncryptionKey) << endl;
-    cout << "Text After Decryption: " << Decryption(Encryption(Text), EncryptionKey) << endl;
+    cout << "Text After Encryption: " << TextAfterEncryption << endl;
+    cout << "Text After Decryption: " << TextAfterDecryption << endl;
 
     return 0;
 }
