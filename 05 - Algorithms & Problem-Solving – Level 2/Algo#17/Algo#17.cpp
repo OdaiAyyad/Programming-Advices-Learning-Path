@@ -32,15 +32,14 @@ bool PasswordSearch(string OriginalPassword)
 
                 cout << "Trial [" << Counter << "]: " << Password << endl;
 
-                if (OriginalPassword == Password)
+                if (Password == OriginalPassword)
                 {
-                    cout << "\nPassword is " << Password << endl;
+                    cout << "\nPassword is: " << Password << endl;
                     cout << "Found after " << Counter << " Trial(s).\n";
 
                     return true;
                 }
-                else
-                    Password = "";
+                Password = "";
             }
         }
     }
