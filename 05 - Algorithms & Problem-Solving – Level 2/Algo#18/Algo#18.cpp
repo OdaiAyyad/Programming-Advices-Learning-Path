@@ -22,14 +22,14 @@ string Encryption(string Text, short EncryptionKey)
     return Text;
 }
 
-string Decryption(string EncryptedName)
+string Decryption(string Text, short EncryptionKey)
 {
-    for (int i = 0; i <= EncryptedName.length(); i++)
+    for (int i = 0; i <= Text.length(); i++)
     {
-        EncryptedName[i] -= 2;
+        Text[i] -= EncryptionKey;
     }
 
-    return EncryptedName;
+    return Text;
 }
 
 int main()
@@ -38,8 +38,8 @@ int main()
 
     string Text = ReadText();
     cout << "\nText Before Encryption: " << Text << endl;
-    cout << "Text After Encryption: " << Encryption(Text) << endl;
-    cout << "Text After Decryption: " << Decryption(Encryption(Text)) << endl;
+    cout << "Text After Encryption: " << Encryption(Text, EncryptionKey) << endl;
+    cout << "Text After Decryption: " << Decryption(Encryption(Text), EncryptionKey) << endl;
 
     return 0;
 }
