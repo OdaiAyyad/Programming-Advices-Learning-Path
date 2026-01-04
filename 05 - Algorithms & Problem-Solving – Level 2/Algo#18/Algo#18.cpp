@@ -7,7 +7,8 @@ string ReadText()
 {
     string Text = "";
 
-    cout << "Enter Text: "; cin >> Text;
+    cout << "Enter Text: "; 
+    getline(cin, Text);
 
     return Text;
 }
