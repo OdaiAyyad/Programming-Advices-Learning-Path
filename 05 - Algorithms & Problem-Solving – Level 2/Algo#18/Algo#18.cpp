@@ -22,11 +22,22 @@ string Encryption(string Name)
     return Name;
 }
 
+string Decryption(string EncryptedName)
+{
+    for (int i = 0; i <= EncryptedName.length(); i++)
+    {
+        EncryptedName[i] -= 2;
+    }
+
+    return EncryptedName;
+}
+
 int main()
 {
     string Name = ReadName();
-    cout << "Name Before Encryption: " << Name << endl;
+    cout << "\nName Before Encryption: " << Name << endl;
     cout << "Name After Encryption: " << Encryption(Name) << endl;
+    cout << "Name After Decryption: " << Decryption(Encryption(Name)) << endl;
 
     return 0;
 }
