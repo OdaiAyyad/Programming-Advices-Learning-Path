@@ -16,6 +16,8 @@ bool PasswordSearch(string OriginalPassword)
 {
     short Counter = 0; string Password = "";
 
+    cout << "\n";
+
     for (int i = 65; i <= 90; i++)
     {
         for (int j = 65; j <= 90; j++)
