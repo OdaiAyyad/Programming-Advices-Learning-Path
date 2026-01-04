@@ -28,9 +28,11 @@ bool PasswordSearch(string OriginalPassword)
                 Password = Password + char(j);
                 Password = Password + char(k);
 
+                cout << "Trial [" << Counter << "]: " << Password << endl;
+
                 if (OriginalPassword == Password)
                 {
-                    cout << "Password is " << Password << endl;
+                    cout << "\nPassword is " << Password << endl;
                     cout << "Found after " << Counter << " Trial(s).\n";
 
                     return true;
