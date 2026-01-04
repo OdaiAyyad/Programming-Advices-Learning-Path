@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void PrintFromAAAtoZZZLetterPattern()
+void PrintWordsFromAAAtoZZZ()
 {
     for (int i = 65; i <= 90 ; i++)
     {
@@ -19,7 +19,7 @@ void PrintFromAAAtoZZZLetterPattern()
 
 int main()
 {
-    PrintFromAAAtoZZZLetterPattern();
+    PrintWordsFromAAAtoZZZ();
 
     return 0;
 }
