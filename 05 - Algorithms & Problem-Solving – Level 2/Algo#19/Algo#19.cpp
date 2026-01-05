@@ -19,6 +19,6 @@ int main()
     cout << RandomNumber(1, 10) << endl;
     cout << RandomNumber(1, 10) << endl;
     cout << RandomNumber(1, 10) << endl;
-
+    
     return 0;
 }
