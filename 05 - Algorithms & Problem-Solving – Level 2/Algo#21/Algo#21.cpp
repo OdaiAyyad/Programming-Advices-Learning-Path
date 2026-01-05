@@ -68,10 +68,12 @@ string GenerateKey()
 
 void GenerateKeys(short NumberOfKeys)
 {
-    for (int i = 1; i < +NumberOfKeys; i++)
+    cout << "\n";
+
+    for (int i = 1; i <= NumberOfKeys; i++)
     {
         cout << "Key [" << i << "]: ";
-        cout << GenerateKey();
+        cout << GenerateKey() << endl;
     }
 }
 
