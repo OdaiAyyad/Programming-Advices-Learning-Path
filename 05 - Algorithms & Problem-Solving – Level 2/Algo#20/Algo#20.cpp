@@ -18,10 +18,16 @@ char GetRandomCharacter(enCharType CharType)
     switch (CharType)
     {
     case enCharType::SmallLetter:
-        return RandomNumber(char(97), char(122));
+        return char(RandomNumber(97, 122));
+
     case enCharType::CapitalLetter:
         return char(RandomNumber(65, 90));
 
+    case enCharType::SpecialCharacter:
+        return char(RandomNumber(33, 47));
+
+    case enCharType::Digit:
+        return char(RandomNumber(48, 57));
     }
 }
 
@@ -32,6 +38,8 @@ int main()
 
     cout << GetRandomCharacter(enCharType::SmallLetter) << endl;
     cout << GetRandomCharacter(enCharType::CapitalLetter) << endl;
+    cout << GetRandomCharacter(enCharType::SpecialCharacter) << endl;
+    cout << GetRandomCharacter(enCharType::Digit) << endl;
 
     return 0;
 }
