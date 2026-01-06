@@ -1,20 +1,65 @@
-﻿// Algo#22.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
 
-#include <iostream>
+int ReadNumber(string Message) 
+{
+    int Number;
+    do
+    {
+        cout << Message; cin >> Number;
+
+    } while (Number < 0);
+
+    return Number;
+}
+
+void ReadArray(int arr[100], int& ArrayLength)
+{
+    cout << "Enter the number of elements: "; cin >> ArrayLength;
+
+    cout << "\nEnter array elements: \n";
+    for (int i = 1; i <= ArrayLength; i++)
+    {
+        cout << "Element [" << i << "]: ";
+        cin >> arr[i];
+    }
+    cout << endl;
+}
+
+void PrintArray(int arr[100], int ArrayLength)
+{
+    for (int i = 1; i <= ArrayLength; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
+
+int TimesRepeated(int Number, int arr[100], int ArrayLength)
+{
+    int Counter = 0;
+
+    for (int i = 0; i < ArrayLength; i++)
+    {
+        if (arr[i] == Number)
+            Counter++;
+    }
+    return Counter;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int arr[100], ArrayLength, NumberToCheck;
+
+    ReadArray(arr, ArrayLength);
+
+    NumberToCheck = ReadNumber("Enter the number you want to check: ");
+
+    cout << "\nOriginal Array: ";
+    PrintArray(arr, ArrayLength);
+
+    cout << "\nNumber " << NumberToCheck << " is repeated " << TimesRepeated(NumberToCheck, arr, ArrayLength) << " time(s).\n";
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
