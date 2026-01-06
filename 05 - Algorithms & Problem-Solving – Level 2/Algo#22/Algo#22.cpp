@@ -3,26 +3,26 @@
 #include <cmath>
 using namespace std;
 
-int ReadNumber(string Message) 
+int ReadPositiveNumber(string Message)
 {
-    int Number;
+    int Number = 0;
     do
     {
         cout << Message; cin >> Number;
 
-    } while (Number < 0);
+    } while (Number <= 0);
 
     return Number;
 }
 
 void ReadArray(int arr[100], int& ArrayLength)
 {
-    cout << "Enter the number of elements: "; cin >> ArrayLength;
+    cout << "Enter number of elements: "; cin >> ArrayLength;
 
     cout << "\nEnter array elements: \n";
-    for (int i = 1; i <= ArrayLength; i++)
+    for (int i = 0; i < ArrayLength; i++)
     {
-        cout << "Element [" << i << "]: ";
+        cout << "Element [" << i + 1 << "]: ";
         cin >> arr[i];
     }
     cout << endl;
@@ -30,17 +30,18 @@ void ReadArray(int arr[100], int& ArrayLength)
 
 void PrintArray(int arr[100], int ArrayLength)
 {
-    for (int i = 1; i <= ArrayLength; i++)
+    for (int i = 0; i < ArrayLength; i++)
     {
         cout << arr[i] << " ";
     }
+    cout << endl;
 }
 
 int TimesRepeated(int Number, int arr[100], int ArrayLength)
 {
     int Counter = 0;
 
-    for (int i = 0; i < ArrayLength; i++)
+    for (int i = 0; i <= ArrayLength - 1; i++)
     {
         if (arr[i] == Number)
             Counter++;
@@ -54,9 +55,9 @@ int main()
 
     ReadArray(arr, ArrayLength);
 
-    NumberToCheck = ReadNumber("Enter the number you want to check: ");
+    NumberToCheck = ReadPositiveNumber("Enter the number you want to check: ");
 
-    cout << "\nOriginal Array: ";
+    cout << "\nOriginal Array: "; 
     PrintArray(arr, ArrayLength);
 
     cout << "\nNumber " << NumberToCheck << " is repeated " << TimesRepeated(NumberToCheck, arr, ArrayLength) << " time(s).\n";
