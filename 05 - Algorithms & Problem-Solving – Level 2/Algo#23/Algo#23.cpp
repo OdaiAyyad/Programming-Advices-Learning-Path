@@ -34,7 +34,7 @@ void PrintArray(int arr[100], int ArrayLength)
 {
     for (int i = 0; i < ArrayLength; i++)
     {
-        cout << arr[i] << " \n";
+        cout << arr[i] << " ";
     }
 }
 
