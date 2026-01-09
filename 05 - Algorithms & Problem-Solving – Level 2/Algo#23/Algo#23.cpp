@@ -22,9 +22,32 @@ int RandomNumber(int From, int To)
     return RandNum;
 }
 
+void FillArrayWithRandomNumbers(int arr[100], int& ArrayLength)
+{
+    for (int i = 0; i < ArrayLength; i++)
+    {
+        arr [i] = RandomNumber(1, 100);
+    }
+}
+
+void PrintArray(int arr[100], int ArrayLength)
+{
+    for (int i = 0; i < ArrayLength; i++)
+    {
+        cout << arr[i] << " \n";
+    }
+}
+
 int main()
 {
+    srand((unsigned)time(NULL));
 
+    int arr[100], ArrayLength = ReadPositiveNumber("Enter a Number: ");
+
+    FillArrayWithRandomNumbers(arr, ArrayLength);
+
+    cout << "\nArray Elements: \n";
+    PrintArray(arr, ArrayLength);
 
     return 0;
 }
