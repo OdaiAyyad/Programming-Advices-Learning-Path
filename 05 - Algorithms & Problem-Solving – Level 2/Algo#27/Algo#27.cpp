@@ -41,12 +41,14 @@ void PrintArray(int arr[100], int ArrayLength)
 
 int ArrayNumbersAverage(int arr[100], int ArrayLength)
 {
-    int Sum = 0, Average = Sum/ArrayLength;
+    int Sum = 0, Average;
 
     for (int i = 0; i < ArrayLength; i++)
     {
         Sum += arr[i];
     }
+    Average = Sum / ArrayLength;
+
     return float(Average);
 }
 
