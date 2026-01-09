@@ -39,16 +39,16 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
-int MaxNumberInArray(int arr[100], int ArrayLength)
+int MinNumberInArray(int arr[100], int ArrayLength)
 {
-    int Max = 0;
+    int Min = arr[0];
 
     for (int i = 0; i < ArrayLength; i++)
     {
-        if (arr[i] > Max)
-            Max = arr[i];
+        if (arr[i] < Min)
+            Min = arr[i];
     }
-    return Max;
+    return Min;
 }
 
 int main()
@@ -62,6 +62,6 @@ int main()
     cout << "\nArray Elements: ";
     PrintArray(arr, ArrayLength);
 
-    cout << "\nMax Number in the Array is: " << MaxNumberInArray(arr, ArrayLength) << endl;
+    cout << "\nMax Number in the Array is: " << MinNumberInArray(arr, ArrayLength) << endl;
 
 }
