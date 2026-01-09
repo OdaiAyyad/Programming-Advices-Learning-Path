@@ -39,17 +39,20 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
-int ArrayNumbersAverage(int arr[100], int ArrayLength)
+int ArrayNumbersSummation(int arr[100], int ArrayLength)
 {
-    int Sum = 0, Average;
+    int Sum = 0;
 
     for (int i = 0; i < ArrayLength; i++)
     {
         Sum += arr[i];
     }
-    Average = Sum / ArrayLength;
+    return Sum;
+}
 
-    return float(Average);
+int ArrayNumbersAverage(int arr[100], int ArrayLength)
+{
+    return float(ArrayNumbersSummation(arr, ArrayLength) / ArrayLength);
 }
 
 int main()
