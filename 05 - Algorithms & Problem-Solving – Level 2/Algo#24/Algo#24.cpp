@@ -36,6 +36,19 @@ void PrintArray(int arr[100], int ArrayLength)
     {
         cout << arr[i] << " ";
     }
+    cout << "\n";
+}
+
+int MaxNumber(int arr[100], int ArrayLength)
+{
+    int Max = 0;
+
+    for (int i = 0; i < ArrayLength; i++)
+    {
+        if (arr[i] > Max)
+            Max = arr[i];
+    }
+    return Max;
 }
 
 int main()
@@ -48,5 +61,7 @@ int main()
 
     cout << "\nArray Elements: ";
     PrintArray(arr, ArrayLength);
+
+    cout << "Max Number in the Array is: " << MaxNumber(arr, ArrayLength) << endl;
 
 }
