@@ -36,6 +36,7 @@ void PrintArray(int arr[100], int ArrayLength)
     {
         cout << arr[i] << " ";
     }
+    cout << "\n";
 }
 
 int main()
@@ -46,7 +47,7 @@ int main()
 
     FillArrayWithRandomNumbers(arr, ArrayLength);
 
-    cout << "\nArray Elements: \n";
+    cout << "\nArray Elements: ";
     PrintArray(arr, ArrayLength);
 
     return 0;
