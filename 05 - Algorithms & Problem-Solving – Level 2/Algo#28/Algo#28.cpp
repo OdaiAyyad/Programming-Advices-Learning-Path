@@ -44,9 +44,7 @@ void CopyArray(int SourceArr[100], int DestinationArr[100], int ArrayLength)
     for (int i = 0; i < ArrayLength; i++)
     {
         DestinationArr[i] = SourceArr[i];
-        cout << DestinationArr[i] << " ";
     }
-    cout << "\n";
 }
 
 
@@ -62,7 +60,10 @@ int main()
     PrintArray(arr, ArrayLength);
 
     int ArrDestination[100];
-    cout << "\nArray Elements after copy: ";
     CopyArray(arr, ArrDestination, ArrayLength);
 
+    cout << "\nArray Elements after copy: ";
+    PrintArray(ArrDestination, ArrayLength);  
+
+    return 0;
 }
