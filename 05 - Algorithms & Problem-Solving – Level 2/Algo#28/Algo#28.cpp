@@ -39,21 +39,16 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
-int ArrayNumbersSummation(int arr[100], int ArrayLength)
+void CopyArray(int SourceArr[100], int DestinationArr[100], int ArrayLength)
 {
-    int Sum = 0;
-
     for (int i = 0; i < ArrayLength; i++)
     {
-        Sum += arr[i];
+        DestinationArr[i] = SourceArr[i];
+        cout << DestinationArr[i] << " ";
     }
-    return Sum;
+    cout << "\n";
 }
 
-int ArrayNumbersAverage(int arr[100], int ArrayLength)
-{
-    return float(ArrayNumbersSummation(arr, ArrayLength) / ArrayLength);
-}
 
 int main()
 {
@@ -66,6 +61,8 @@ int main()
     cout << "\nArray Elements: ";
     PrintArray(arr, ArrayLength);
 
-    cout << "\nArray Numbers Average: " << ArrayNumbersAverage(arr, ArrayLength) << endl;
+    int ArrDestination[100];
+    cout << "\nArray Elements after copy: ";
+    CopyArray(arr, ArrDestination, ArrayLength);
 
 }
