@@ -50,7 +50,7 @@ void CopyOnlyPrimeNumbers(int SourceArr[100], int DestinationArr[100], int Array
 
     for (int i = 0; i < ArrayLength; i++)
     {
-        if (CheckPrime(SourceArr[i] == enPrimNotPrime::Prime))
+        if (CheckPrime(SourceArr[i]) == enPrimNotPrime::Prime)
         {
             DestinationArr[Counter] = SourceArr[i];
             Counter++;
@@ -77,6 +77,7 @@ int main()
     FillArrayWithRandomNumbers(arr, ArrayLength);
 
     int ArrDestination[100], ArrayDestinationLength = 0;
+
     CopyOnlyPrimeNumbers(arr, ArrDestination, ArrayLength, ArrayDestinationLength);
 
     cout << "\nArray Elements: ";
