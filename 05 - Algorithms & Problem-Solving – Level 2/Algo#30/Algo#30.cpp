@@ -39,13 +39,12 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
-void TwoArraysSummation(int arr1[100], int arr2[100], int ArrayLength)
+void TwoArraysSummation(int arr1[100], int arr2[100], int arrSum[100], int ArrayLength)
 {
     for (int i = 0; i < ArrayLength; i++)
     {
-        cout << arr1[i] + arr2[i] << " ";
+        arrSum[i] = arr1[i] + arr2[i];
     }
-    cout << "\n";
 }
 
 
@@ -66,8 +65,11 @@ int main()
     cout << "\nArray 2 Elements: ";
     PrintArray(arr2, ArrayLength);
 
+    int arrSum[100];
+    TwoArraysSummation(arr1, arr2, arrSum, ArrayLength);
+
     cout << "\nTwo Arrays Summation: ";
-    TwoArraysSummation(arr1, arr2, ArrayLength);
+    PrintArray(arrSum, ArrayLength);
 
     return 0;
 }
