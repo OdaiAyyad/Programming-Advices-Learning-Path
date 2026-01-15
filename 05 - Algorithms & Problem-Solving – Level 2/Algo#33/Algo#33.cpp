@@ -65,17 +65,6 @@ string GenerateKey()
     return Key;
 }
 
-void GenerateKeys(short NumberOfKeys)
-{
-    cout << "\n";
-
-    for (int i = 1; i <= NumberOfKeys; i++)
-    {
-        cout << "Key [" << i << "]: ";
-        cout << GenerateKey() << endl;
-    }
-}
-
 void FillArrayWithRandomKeys(string arr[100], int ArrayLength)
 {
     for (int i = 0; i < ArrayLength; i++)
