@@ -76,19 +76,20 @@ void GenerateKeys(short NumberOfKeys)
     }
 }
 
-void FillArrayWithRandomKeys(int arr[100], int ArrayLength)
+void FillArrayWithRandomKeys(string arr[100], int ArrayLength)
 {
     for (int i = 0; i < ArrayLength; i++)
     {
-        arr[i] = RandomNumber(1, 100);
+        arr[i] = GenerateKey();
     }
 }
 
-void PrintArray(int arr[100], int ArrayLength)
+void PrintStringArray(string arr[100], int ArrayLength)
 {
     for (int i = 0; i < ArrayLength; i++)
     {
-        cout << arr[i] << " ";
+        cout << "Key [" << i << "]: ";
+        cout << arr[i] << "\n";
     }
     cout << "\n";
 }
@@ -97,12 +98,12 @@ int main()
 {
     srand((unsigned)time(NULL));
 
-    int arr[100], ArrayLength(ReadPositiveNumber("Enter a Number: "));
+    string arr[100]; int ArrayLength(ReadPositiveNumber("Enter a Number: "));
 
-    FillArrayWithRandomKeyrs(arr, ArrayLength);
+    FillArrayWithRandomKeys(arr, ArrayLength);
 
-    cout << "\nArray Elements: ";
-    PrintArray(arr, ArrayLength);
+    cout << "\nArray Elements: \n";
+    PrintStringArray(arr, ArrayLength);
 
     return 0;
 }
