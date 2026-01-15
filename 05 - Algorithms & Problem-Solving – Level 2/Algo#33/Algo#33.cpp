@@ -92,7 +92,7 @@ int main()
     FillArrayWithRandomKeys(arr, ArrayLength);
 
     cout << "\nArray Elements: \n";
-    PrintStringArray(arr, ArrayLength);
+    PrintStringArray(arr, ArrayLength)
 
     return 0;
 }
