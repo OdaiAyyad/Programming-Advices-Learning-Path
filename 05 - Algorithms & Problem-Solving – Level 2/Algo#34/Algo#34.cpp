@@ -39,16 +39,38 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
+void SearchNumberInArray(int arr[100], int ArrayLength, int Number)
+{
+    for (int i = 0; i < ArrayLength; i++)
+    {
+        if (arr[i] == Number)
+        {
+            cout << "The number found at position: " << i << endl;
+            cout << "The number order is: " << i + 1 << endl;
+        }
+        else
+            cout << "The number is not found!\n";
+    }
+}
+
+
+
 int main()
 {
     srand((unsigned)time(NULL));
 
-    string arr[100]; int ArrayLength(ReadPositiveNumber("Enter a Number: "));
+    int arr[100], ArrayLength(ReadPositiveNumber("Enter a Number: ")), NumberToSearch;
 
-    FillArrayWithRandomKeys(arr, ArrayLength);
+    FillArrayWithRandomNumbers(arr, ArrayLength);
 
     cout << "\nArray Elements: \n";
-    PrintStringArray(arr, ArrayLength);
+    PrintArray(arr, ArrayLength);
+
+    NumberToSearch = ReadPositiveNumber("Enter a number to search for: ");
+
+    cout << "Number you are looking for is: " << NumberToSearch << endl;
+    
+    SearchNumberInArray(arr, ArrayLength, NumberToSearch);
 
     return 0;
 }
