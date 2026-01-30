@@ -39,16 +39,19 @@ void PrintArray(int arr[100], int ArrayLength)
     cout << "\n";
 }
 
-int FindNumberPosition(int arr[100], int ArrayLength, int Number)
+short FindNumberPositionInArray(int arr[100], int ArrayLength, int Number)
 {
     for (int i = 0; i < ArrayLength; i++)
     {
         if (arr[i] == Number)
-        {
             return i;
-        }
     }
     return -1;
+}
+
+bool IsNumberInArray(int arr[100], int ArrayLength, int Number)
+{
+    return FindNumberPositionInArray(arr, ArrayLength, Number) != -1;
 }
 
 int main()
@@ -65,8 +68,7 @@ int main()
     NumberToSearch = ReadPositiveNumber("\nEnter a number to search for: ");
     cout << "\nNumber you are looking for is: " << NumberToSearch << endl;
 
-    short NumberPosition = FindNumberPosition(arr, ArrayLength, NumberToSearch);
-    if (NumberPosition == -1)
+    if (!IsNumberInArray(arr, ArrayLength, NumberToSearch))
     {
         cout << "No, the number is not found :-(\n";
     }
